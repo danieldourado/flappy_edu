@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://scenes/obstaculo_muro1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/obstaculo_rotatorio.tscn" type="PackedScene" id=2]
+
+[node name="fase1" type="StaticBody2D"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="pipe" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 985.622, 612.158 )
+
+[node name="pipe1" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1437.86, 779.304 )
+
+[node name="pipe2" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1924.23, 539.512 )
+
+[node name="Obstaculo Rotatorio" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 2518.9, 897.939 )
+
+[node name="Obstaculo Rotatorio 2" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 3494.61, 466.911 )
+rotation_velocity = 2
+
+[node name="Obstaculo Rotatorio3" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 4278.46, 904.862 )
+rotation_velocity = 2
+
+[node name="Obstaculo Rotatorio4" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 5173.89, 293.962 )
+rotation_velocity = 2
+
+

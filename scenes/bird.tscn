@@ -1,0 +1,172 @@
+[gd_scene load_steps=29 format=1]
+
+[ext_resource path="res://scripts/bird.gd" type="Script" id=1]
+[ext_resource path="res://sprites/bird/EDU_Voando_001.png" type="Texture" id=2]
+[ext_resource path="res://sprites/bird/EDU_Voando_002.png" type="Texture" id=3]
+[ext_resource path="res://sprites/bird/EDU_Voando_003.png" type="Texture" id=4]
+[ext_resource path="res://sprites/bird/EDU_Voando_004.png" type="Texture" id=5]
+[ext_resource path="res://sprites/bird/EDU_Voando_005.png" type="Texture" id=6]
+[ext_resource path="res://sprites/bird/EDU_Voando_006.png" type="Texture" id=7]
+[ext_resource path="res://sprites/bird/EDU_Voando_007.png" type="Texture" id=8]
+[ext_resource path="res://sprites/bird/EDU_Voando_008.png" type="Texture" id=9]
+[ext_resource path="res://sprites/bird/EDU_Voando_009.png" type="Texture" id=10]
+[ext_resource path="res://sprites/bird/EDU_Voando_010.png" type="Texture" id=11]
+[ext_resource path="res://sprites/bird/EDU_Voando_011.png" type="Texture" id=12]
+[ext_resource path="res://sprites/bird/EDU_Voando_012.png" type="Texture" id=13]
+[ext_resource path="res://sprites/bird/EDU_Voando_013.png" type="Texture" id=14]
+[ext_resource path="res://sprites/bird/EDU_Voando_014.png" type="Texture" id=15]
+[ext_resource path="res://sprites/bird/EDU_Voando_015.png" type="Texture" id=16]
+[ext_resource path="res://sprites/bird/EDU_Voando_016.png" type="Texture" id=17]
+[ext_resource path="res://sprites/bird/EDU_Voando_017.png" type="Texture" id=18]
+[ext_resource path="res://sprites/bird/EDU_Voando_018.png" type="Texture" id=19]
+[ext_resource path="res://sprites/bird/EDU_Voando_019.png" type="Texture" id=20]
+[ext_resource path="res://sprites/bird/EDU_Voando_020.png" type="Texture" id=21]
+[ext_resource path="res://sprites/bird/EDU_Voando_021.png" type="Texture" id=22]
+[ext_resource path="res://sprites/bird/EDU_Voando_022.png" type="Texture" id=23]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 6.5
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "flap"
+length = 1.8
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("anim_sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ]
+}
+
+[sub_resource type="Animation" id=4]
+
+resource/name = "flying"
+length = 1.5
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("anim_sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.7, 1, 1.3 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("anim_sprite:transform/pos")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 6 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+
+resource/name = "idle"
+length = 0.1
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("anim_sprite:transform/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("anim_sprite:frame")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+
+[node name="bird" type="RigidBody2D"]
+
+transform/pos = Vector2( 36, 120 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 11.2198, 0, 0, 11.2198, -1.05217, -0.0796783 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 5.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 1
+contact_monitor = true
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = 0.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+speed = 50
+gravity_force = 2
+flap_force = 200
+
+[node name="anim_sprite" type="AnimatedSprite" parent="."]
+
+transform/scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 2 )
+animation = "New Anim"
+frame = 1
+
+[node name="shape" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -1.05217, -0.0796783 )
+transform/scale = Vector2( 11.2198, 11.2198 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/flap = SubResource( 3 )
+anims/flying = SubResource( 4 )
+anims/idle = SubResource( 5 )
+playback/active = true
+playback/speed = 3.0
+blend_times = [  ]
+autoplay = "idle"
+
+
