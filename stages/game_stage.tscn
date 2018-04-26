@@ -944,4 +944,6 @@ script/script = SubResource( 18 )
 
 [node name="fase1" parent="." instance=ExtResource( 21 )]
 
+transform/pos = Vector2( 1260, 0 )
+
 

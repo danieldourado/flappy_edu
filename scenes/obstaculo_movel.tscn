@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://scenes/obstaculo_movel.gd" type="Script" id=1]
-[ext_resource path="res://sprites/obstacles/GARRAS_MÓVEIS.png" type="Texture" id=2]
+[ext_resource path="res://scripts/obstaculo_movel.gd" type="Script" id=1]
+[ext_resource path="res://sprites/obstacles/GARRAS_MрVEIS.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -13,7 +13,7 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 radius = 10.0
 
-[node name="obstaculo_movel" type="StaticBody2D"]
+[node name="ObstaculoMovel" type="StaticBody2D"]
 
 transform/pos = Vector2( 534.865, 931.301 )
 input/pickable = false
@@ -24,11 +24,10 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 script/script = ExtResource( 1 )
-distance_to_travel = 300
-speed = 5
+speed = 2
 mortal = true
 
-[node name="garras_moveis" type="StaticBody2D" parent="."]
+[node name="GarrasMoveis" type="StaticBody2D" parent="."]
 
 transform/scale = Vector2( 0.5, 0.5 )
 input/pickable = false
@@ -48,12 +47,12 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="garras_moveis_sprite" type="Sprite" parent="garras_moveis"]
+[node name="garras_moveis_sprite" type="Sprite" parent="GarrasMoveis"]
 
 transform/rot = 90.0
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="garras_moveis"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GarrasMoveis"]
 
 transform/pos = Vector2( -0.580526, -5.10754 )
 transform/scale = Vector2( 3.70968, 34.02 )
@@ -61,7 +60,7 @@ shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
-[node name="CollisionShape2D1" type="CollisionShape2D" parent="garras_moveis"]
+[node name="CollisionShape2D1" type="CollisionShape2D" parent="GarrasMoveis"]
 
 transform/pos = Vector2( 0.8158, -297.432 )
 transform/scale = Vector2( 5.48066, 5.83654 )
@@ -69,12 +68,27 @@ shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 1
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="garras_moveis"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="GarrasMoveis"]
 
 transform/pos = Vector2( 2.66645, 298.465 )
 transform/scale = Vector2( 5.48066, 5.83654 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 2
+
+[node name="Position1" type="Position2D" parent="."]
+
+transform/pos = Vector2( 0, -500 )
+
+[node name="Position2" type="Position2D" parent="."]
+
+transform/pos = Vector2( 0, 500 )
+
+[node name="Tween" type="Tween" parent="."]
+
+playback/process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
 
 
