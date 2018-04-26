@@ -52,9 +52,6 @@ script/script = ExtResource( 1 )
 
 transform/pos = Vector2( 39.5285, 740.153 )
 gravity_scale = 1.0
-speed = 50
-gravity_force = 2
-flap_force = 200
 
 [node name="spawner_ground" parent="." instance=ExtResource( 3 )]
 

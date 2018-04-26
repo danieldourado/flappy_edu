@@ -11,7 +11,7 @@ scale = Vector2( 1, 1 )
 
 [node name="sky" type="Sprite" parent="."]
 
-transform/scale = Vector2( 6.06092, 1 )
+transform/scale = Vector2( 5.96844, 0.750083 )
 texture = ExtResource( 1 )
 centered = false
 
