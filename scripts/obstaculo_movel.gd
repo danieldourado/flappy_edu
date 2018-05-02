@@ -11,8 +11,9 @@ export var mortal = true
 func _ready():
 	self.set_rot(self.get_global_transform().get_rotation())
 	self.GarrasMoveis.set_pos(Position2.get_pos())
+	
 	if self.mortal:
-		add_to_group(game.GROUP_PIPES)
+		self.GarrasMoveis.add_to_group(game.GROUP_PIPES)
 	done()
 	
 func process(target_position):

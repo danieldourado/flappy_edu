@@ -11,6 +11,7 @@ func _ready():
 	pass
 
 func _process(delta):
+	return
 	if camera == null: return
 	
 	if right.get_global_pos().x <= camera.get_total_pos().x:

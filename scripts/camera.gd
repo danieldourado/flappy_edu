@@ -9,7 +9,7 @@ func _ready():
 	pass
 
 func _fixed_process(delta):
-	set_pos(Vector2(bird.get_pos().x, get_pos().y))
+	set_pos(Vector2(bird.get_pos().x+bird.x_offset*-1, get_pos().y))
 	pass
 
 func get_total_pos():

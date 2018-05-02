@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=2]
+
+[node name="Fase2" type="Node2D"]
+
+[node name="Obstaculo Muro 1" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1182.59, 541.656 )
+
+[node name="Obstaculo Muro2" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1790.91, -130.485 )
+
+[node name="ground" parent="." instance=ExtResource( 2 )]
+
+

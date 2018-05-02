@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/obstaculo_rotatorio.tscn" type="PackedScene" id=4]
+
+[node name="Fase3" type="Node2D"]
+
+[node name="Obstaculo Muro 1" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 728.709, -308.176 )
+transform/rot = -42.1268
+
+[node name="Obstaculo Muro2" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1902.28, -484.139 )
+
+[node name="Obstaculo Muro3" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1906.08, 210.306 )
+
+[node name="Obstaculo Muro4" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1310.3, 206.511 )
+
+[node name="ground" parent="." instance=ExtResource( 2 )]
+
+[node name="ObstaculoMovel" parent="." instance=ExtResource( 3 )]
+
+[node name="Obstaculo Rotatorio" parent="ObstaculoMovel" instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -6.39856, 432.23 )
+
+

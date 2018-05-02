@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://scripts/camera.gd" type="Script" id=1]
 [ext_resource path="res://scenes/bird.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://sprites/interface/label_flappy_bird.png" type="Texture" id=5]
 [ext_resource path="res://sprites/interface/button_play_normal.png" type="Texture" id=6]
 [ext_resource path="res://sprites/interface/button_play_pressed.png" type="Texture" id=7]
-[ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=8]
 
 [sub_resource type="GDScript" id=1]
 
@@ -114,7 +113,5 @@ textures/pressed = ExtResource( 7 )
 params/resize_mode = 0
 params/stretch_mode = 0
 script/script = SubResource( 1 )
-
-[node name="ObstaculoMovel" parent="." instance=ExtResource( 8 )]
 
 

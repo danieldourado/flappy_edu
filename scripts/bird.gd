@@ -8,6 +8,7 @@ var prev_state
 export var speed = 50
 export var gravity_force = 2
 export var flap_force = 200
+export var x_offset = 100
 
 
 const STATE_FLYING   = 0
@@ -95,7 +96,7 @@ class FlyingState:
 	func exit():
 		bird.set_gravity_scale(prev_gravity_scale)
 		bird.get_node("anim").stop()
-		bird.get_node("anim_sprite").set_pos(Vector2(0, 0))
+		#bird.get_node("anim_sprite").set_pos(Vector2(0, 0))
 		pass
 
 # class FlappingState --------------------------------------------------
@@ -176,6 +177,9 @@ class HitState:
 	func on_body_enter(other_body):
 		if other_body.is_in_group(game.GROUP_GROUNDS):
 			bird.set_state(bird.STATE_GROUNDED)
+		if other_body.is_in_group(game.GROUP_PIPES):
+			bird.add_collision_exception_with(other_body)
+		
 		pass
 	
 	func exit():
