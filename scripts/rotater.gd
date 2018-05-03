@@ -3,7 +3,7 @@ extends StaticBody2D
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
-export var rotation_velocity = 1
+export var rotation_velocity = 1.0
 
 func _ready():
 	set_process(true)

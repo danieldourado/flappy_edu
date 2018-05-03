@@ -15,6 +15,7 @@ radius = 10.0
 
 [node name="ObstaculoMovel" type="StaticBody2D"]
 
+editor/display_folded = true
 transform/pos = Vector2( 534.865, 931.301 )
 input/pickable = false
 collision/layers = 1
@@ -24,8 +25,9 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 script/script = ExtResource( 1 )
-speed = 2
+speed = 2.2
 mortal = true
+delay_to_start = 0.1
 
 [node name="GarrasMoveis" type="StaticBody2D" parent="."]
 
@@ -90,5 +92,12 @@ playback/process_mode = 1
 playback/active = false
 playback/repeat = false
 playback/speed = 1.0
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
 
 
