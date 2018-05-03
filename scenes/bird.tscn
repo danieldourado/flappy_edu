@@ -114,7 +114,7 @@ tracks/1/keys = {
 transform/pos = Vector2( 36, 120 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 11.2198, 0, 0, 11.2198, -1.05217, -0.0796783 )
+shapes/0/transform = Matrix32( 8, 0, 0, 8, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -140,18 +140,18 @@ __meta__ = {
 speed = 50
 gravity_force = 2
 flap_force = 200
+x_offset = 100
 
 [node name="anim_sprite" type="AnimatedSprite" parent="."]
 
-transform/scale = Vector2( 0.2, 0.2 )
+transform/scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 2 )
 animation = "New Anim"
 frame = 1
 
 [node name="shape" type="CollisionShape2D" parent="."]
 
-transform/pos = Vector2( -1.05217, -0.0796783 )
-transform/scale = Vector2( 11.2198, 11.2198 )
+transform/scale = Vector2( 8, 8 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0

@@ -21,7 +21,7 @@
 [ext_resource path="res://sprites/rect_black.png" type="Texture" id=19]
 [ext_resource path="res://sprites/interface/button_resume.png" type="Texture" id=20]
 [ext_resource path="res://sprites/interface/button_menu.png" type="Texture" id=21]
-[ext_resource path="res://fases/Fase3.tscn" type="PackedScene" id=22]
+[ext_resource path="res://fases/Fase8.tscn" type="PackedScene" id=22]
 
 [sub_resource type="GDScript" id=1]
 
@@ -584,6 +584,7 @@ script/script = SubResource( 1 )
 
 [node name="hud" type="CanvasLayer" parent="."]
 
+editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -945,6 +946,6 @@ params/scale = Vector2( 2, 2 )
 params/stretch_mode = 0
 script/script = SubResource( 18 )
 
-[node name="Fase3" parent="." instance=ExtResource( 22 )]
+[node name="Fase8" parent="." instance=ExtResource( 22 )]
 
 
