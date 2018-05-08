@@ -16,7 +16,7 @@ func _ready():
 	
 	if self.mortal:
 		self.GarrasMoveis.add_to_group(game.GROUP_PIPES)
-		
+	if self.speed <=0: return
 	timer.connect("timeout", self, "start")
 	timer.set_wait_time(self.delay_to_start)
 	timer.start()
