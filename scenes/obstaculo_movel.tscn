@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scripts/obstaculo_movel.gd" type="Script" id=1]
-[ext_resource path="res://sprites/obstacles/GARRAS_MрVEIS.png" type="Texture" id=2]
+[ext_resource path="res://sprites/obstacles/garras.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -15,7 +15,6 @@ radius = 10.0
 
 [node name="ObstaculoMovel" type="StaticBody2D"]
 
-editor/display_folded = true
 transform/pos = Vector2( 534.865, 931.301 )
 input/pickable = false
 collision/layers = 1

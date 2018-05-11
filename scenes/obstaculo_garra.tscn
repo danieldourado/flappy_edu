@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scripts/pipe.gd" type="Script" id=1]
 [ext_resource path="res://scenes/obstaculo2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/obstacles/garras.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -35,4 +36,9 @@ transform/pos = Vector2( 63, 0 )
 
 [node name="Obstaculo_Garra" parent="." instance=ExtResource( 2 )]
 
+[node name="Sprite" parent="Obstaculo_Garra"]
 
+texture = ExtResource( 3 )
+
+
+[editable path="Obstaculo_Garra"]
