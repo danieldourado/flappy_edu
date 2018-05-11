@@ -9,6 +9,7 @@
 
 [node name="ObstaculoMovel" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 895.369, 510.081 )
 
 [node name="GarrasMoveis" parent="ObstaculoMovel"]
@@ -26,6 +27,7 @@ transform/pos = Vector2( 0, 674.56 )
 
 [node name="ObstaculoMovel1" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1305.2, 510.081 )
 
 [node name="GarrasMoveis" parent="ObstaculoMovel1"]
@@ -43,6 +45,7 @@ transform/pos = Vector2( 0, -342.44 )
 
 [node name="ObstaculoMovel2" parent="." instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1764.37, 510.081 )
 
 [node name="GarrasMoveis" parent="ObstaculoMovel2"]

@@ -114,8 +114,11 @@ tracks/1/keys = {
 transform/pos = Vector2( 36, 120 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 8, 0, 0, 8, 0, 0 )
+shapes/0/transform = Matrix32( 5.80333, 0, 0, 5.80333, 18.0342, -27.3088 )
 shapes/0/trigger = false
+shapes/1/shape = SubResource( 1 )
+shapes/1/transform = Matrix32( 5.38861, 0, 0, 5.38861, -31.3824, 6.63416 )
+shapes/1/trigger = false
 collision/layers = 1
 collision/mask = 1
 mode = 0
@@ -134,9 +137,6 @@ velocity/angular = 0.0
 damp_override/linear = 0.0
 damp_override/angular = -1.0
 script/script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 speed = 50
 gravity_force = 2
 flap_force = 200
@@ -144,17 +144,29 @@ x_offset = 100
 
 [node name="anim_sprite" type="AnimatedSprite" parent="."]
 
-transform/scale = Vector2( 0.15, 0.15 )
+transform/scale = Vector2( 0.175, 0.175 )
 frames = SubResource( 2 )
 animation = "New Anim"
 frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="shape" type="CollisionShape2D" parent="."]
 
-transform/scale = Vector2( 8, 8 )
+transform/pos = Vector2( 18.0342, -27.3088 )
+transform/scale = Vector2( 5.80333, 5.80333 )
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
+
+[node name="shape1" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -31.3824, 6.63416 )
+transform/scale = Vector2( 5.38861, 5.38861 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 1
 
 [node name="anim" type="AnimationPlayer" parent="."]
 

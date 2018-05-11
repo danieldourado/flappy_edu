@@ -29,7 +29,7 @@ func _on_pressed():
 
 [node name="camera" type="Camera2D" parent="."]
 
-offset = Vector2( -72, 0 )
+offset = Vector2( 72, 0 )
 anchor_mode = 0
 rotating = false
 current = true
@@ -59,7 +59,6 @@ gravity_scale = 1.0
 
 [node name="hud" type="CanvasLayer" parent="."]
 
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -72,10 +71,10 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 123.0
-margin/top = 176.0
-margin/right = 3747.0
-margin/bottom = 3091.0
+margin/left = 568.0
+margin/top = 25.0
+margin/right = 4192.0
+margin/bottom = 2940.0
 texture = ExtResource( 5 )
 stretch_mode = 0
 
@@ -85,10 +84,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 199.0
-margin/top = 832.0
-margin/right = 735.0
-margin/bottom = 1137.0
+margin/left = 694.0
+margin/top = 665.0
+margin/right = 1230.0
+margin/bottom = 970.0
 custom_constants/separation = 9
 alignment = 1
 __meta__ = {

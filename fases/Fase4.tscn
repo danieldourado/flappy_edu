@@ -7,20 +7,20 @@
 
 [node name="Obstaculo Muro 1" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1179.89, 479.654 )
+transform/pos = Vector2( 1364.33, 461.654 )
 transform/rot = 90.0
 
 [node name="Obstaculo Muro2" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1359.91, -399.669 )
+transform/pos = Vector2( 1544.35, -417.669 )
 
 [node name="Obstaculo Muro3" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1356.11, 871.582 )
+transform/pos = Vector2( 1540.55, 853.582 )
 
 [node name="Obstaculo Muro4" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1170.17, 932.298 )
+transform/pos = Vector2( 1354.61, 914.298 )
 transform/rot = 90.0
 
 [node name="ground" parent="." instance=ExtResource( 2 )]

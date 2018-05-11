@@ -9,14 +9,15 @@
 
 [node name="ObstaculoMovel" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 767.65, 518.582 )
+editor/display_folded = true
+transform/pos = Vector2( 767.65, 500.96 )
 transform/rot = -0.0204291
-speed = 2.0
+speed = 4
 
 [node name="GarrasMoveis" parent="ObstaculoMovel"]
 
 editor/display_folded = true
-transform/pos = Vector2( 10.1984, 219.597 )
+transform/pos = Vector2( 0, -140.407 )
 
 [node name="Position1" parent="ObstaculoMovel"]
 
@@ -28,31 +29,42 @@ transform/pos = Vector2( 0.03302, 672.194 )
 
 [node name="ObstaculoMovel1" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1258.69, 672.152 )
+editor/display_folded = true
+transform/pos = Vector2( 1087.21, 669.149 )
 transform/rot = -0.0204291
-speed = 2.0
-delay_to_start = 0.3
+speed = 4
+
+[node name="Position2" parent="ObstaculoMovel1"]
+
+transform/pos = Vector2( -0.0297852, 416.515 )
+transform/rot = -99.259
 
 [node name="ObstaculoMovel2" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1723.09, 669.634 )
+transform/pos = Vector2( 1469.84, 669.149 )
 transform/rot = -0.0204291
-speed = 2.0
-delay_to_start = 0.5
+speed = 4
+
+[node name="Position2" parent="ObstaculoMovel2"]
+
+transform/pos = Vector2( -0.0460205, 370.978 )
 
 [node name="ObstaculoMovel3" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 2191.27, 672.152 )
+transform/pos = Vector2( 1722.12, 669.149 )
 transform/rot = -0.0204291
-speed = 2.0
-delay_to_start = 0.0
+speed = 4
+
+[node name="Position2" parent="ObstaculoMovel3"]
+
+transform/pos = Vector2( -0.0257568, 427.899 )
 
 [node name="ObstaculoMovel4" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 2645.17, 679.705 )
+editor/display_folded = true
+transform/pos = Vector2( 1944.98, 669.149 )
 transform/rot = -0.0204291
-speed = 2.0
-delay_to_start = 0.9
+speed = 4
 
 
 [editable path="ObstaculoMovel"]
