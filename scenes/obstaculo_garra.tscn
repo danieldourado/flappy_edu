@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/pipe.gd" type="Script" id=1]
+[ext_resource path="res://scenes/obstaculo2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/obstacles/garras.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 23.5782, 208.034 )
+
+[node name="Obstaculo Garra" type="StaticBody2D"]
+
+z/z = -1
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 1 )
+
+[node name="shape_bottom" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="right" type="Position2D" parent="."]
+
+transform/pos = Vector2( 63, 0 )
+
+[node name="Obstaculo_Garra" parent="." instance=ExtResource( 2 )]
+
+[node name="Sprite" parent="Obstaculo_Garra"]
+
+texture = ExtResource( 3 )
+
+
+[editable path="Obstaculo_Garra"]

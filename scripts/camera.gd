@@ -15,4 +15,3 @@ func _fixed_process(delta):
 func get_total_pos():
 	return get_pos() + get_offset()
 	pass
-
