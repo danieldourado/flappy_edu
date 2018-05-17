@@ -7,55 +7,94 @@
 
 [node name="ground" parent="." instance=ExtResource( 1 )]
 
-[node name="ObstaculoMovel" parent="." instance=ExtResource( 2 )]
+[node name="resize_fase9" type="Node2D" parent="."]
 
-transform/pos = Vector2( 767.65, 518.582 )
+transform/pos = Vector2( 1699.29, 468.789 )
 transform/rot = -0.0204291
-speed = 2.0
+transform/scale = Vector2( 0.63, 0.63 )
 
-[node name="GarrasMoveis" parent="ObstaculoMovel"]
+[node name="ObstaculoMovel" parent="resize_fase9" instance=ExtResource( 2 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 10.1984, 219.597 )
-
-[node name="Position1" parent="ObstaculoMovel"]
-
-transform/pos = Vector2( 0, -348.209 )
-
-[node name="Position2" parent="ObstaculoMovel"]
-
-transform/pos = Vector2( 0.03302, 672.194 )
-
-[node name="ObstaculoMovel1" parent="." instance=ExtResource( 2 )]
-
-transform/pos = Vector2( 1258.69, 672.152 )
-transform/rot = -0.0204291
+transform/pos = Vector2( -955.494, -150.711 )
 speed = 2.0
-delay_to_start = 0.3
 
-[node name="ObstaculoMovel2" parent="." instance=ExtResource( 2 )]
+[node name="GarrasMoveis" parent="resize_fase9/ObstaculoMovel"]
 
-transform/pos = Vector2( 1723.09, 669.634 )
-transform/rot = -0.0204291
+editor/display_folded = true
+transform/pos = Vector2( -1.15903, 738.687 )
+
+[node name="Position1" parent="resize_fase9/ObstaculoMovel"]
+
+transform/pos = Vector2( -0.0209961, -407.085 )
+
+[node name="Position2" parent="resize_fase9/ObstaculoMovel"]
+
+transform/pos = Vector2( 0.0564575, 737.915 )
+
+[node name="ObstaculoMovel1" parent="resize_fase9" instance=ExtResource( 2 )]
+
+editor/display_folded = true
+transform/pos = Vector2( -464.399, 2.68359 )
+speed = 2.0
+delay_to_start = 0.7
+
+[node name="Position1" parent="resize_fase9/ObstaculoMovel1"]
+
+transform/pos = Vector2( -0.022583, -563.352 )
+
+[node name="Position2" parent="resize_fase9/ObstaculoMovel1"]
+
+transform/pos = Vector2( 0.0286255, 580.233 )
+
+[node name="ObstaculoMovel2" parent="resize_fase9" instance=ExtResource( 2 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 0, 0 )
 speed = 2.0
 delay_to_start = 0.5
 
-[node name="ObstaculoMovel3" parent="." instance=ExtResource( 2 )]
+[node name="Position1" parent="resize_fase9/ObstaculoMovel2"]
 
-transform/pos = Vector2( 2191.27, 672.152 )
-transform/rot = -0.0204291
+transform/pos = Vector2( -0.022583, -563.352 )
+
+[node name="Position2" parent="resize_fase9/ObstaculoMovel2"]
+
+transform/pos = Vector2( 0.0286255, 580.233 )
+
+[node name="ObstaculoMovel3" parent="resize_fase9" instance=ExtResource( 2 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 468.181, 2.35107 )
 speed = 2.0
-delay_to_start = 0.0
+delay_to_start = 0.2
 
-[node name="ObstaculoMovel4" parent="." instance=ExtResource( 2 )]
+[node name="Position1" parent="resize_fase9/ObstaculoMovel3"]
 
-transform/pos = Vector2( 2645.17, 679.705 )
-transform/rot = -0.0204291
+transform/pos = Vector2( -0.022522, -563.352 )
+
+[node name="Position2" parent="resize_fase9/ObstaculoMovel3"]
+
+transform/pos = Vector2( 0.0286865, 580.233 )
+
+[node name="ObstaculoMovel4" parent="resize_fase9" instance=ExtResource( 2 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 922.083, 9.74225 )
 speed = 2.0
 delay_to_start = 0.9
 
+[node name="Position1" parent="resize_fase9/ObstaculoMovel4"]
 
-[editable path="ObstaculoMovel"]
-[editable path="ObstaculoMovel1"]
-[editable path="ObstaculoMovel2"]
-[editable path="ObstaculoMovel3"]
+transform/pos = Vector2( -0.0224609, -563.352 )
+
+[node name="Position2" parent="resize_fase9/ObstaculoMovel4"]
+
+transform/pos = Vector2( 0.0285645, 580.233 )
+
+
+[editable path="resize_fase9/ObstaculoMovel"]
+[editable path="resize_fase9/ObstaculoMovel1"]
+[editable path="resize_fase9/ObstaculoMovel2"]
+[editable path="resize_fase9/ObstaculoMovel3"]
+[editable path="resize_fase9/ObstaculoMovel4"]

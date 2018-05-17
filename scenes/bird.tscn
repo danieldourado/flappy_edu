@@ -114,10 +114,12 @@ tracks/1/keys = {
 transform/pos = Vector2( 36, 120 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
-shapes/0/transform = Matrix32( 4.03905, 0, 0, 4.03905, 15.8119, -19.5492 )
+
+shapes/0/transform = Matrix32( 3.19137, 0, 0, 3.19137, 13.9124, -17.9776 )
 shapes/0/trigger = false
 shapes/1/shape = SubResource( 1 )
-shapes/1/transform = Matrix32( 3.87599, 0, 0, 3.87599, -11.1824, 0.0278015 )
+shapes/1/transform = Matrix32( 2.88924, 0, 0, 2.04695, -5.91328, 9.67889 )
+
 shapes/1/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -154,16 +156,20 @@ __meta__ = {
 
 [node name="shape" type="CollisionShape2D" parent="."]
 
-transform/pos = Vector2( 15.8119, -19.5492 )
-transform/scale = Vector2( 4.03905, 4.03905 )
+
+transform/pos = Vector2( 13.9124, -17.9776 )
+transform/scale = Vector2( 3.19137, 3.19137 )
+
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
 [node name="shape1" type="CollisionShape2D" parent="."]
 
-transform/pos = Vector2( -11.1824, 0.0278015 )
-transform/scale = Vector2( 3.87599, 3.87599 )
+
+transform/pos = Vector2( -5.91328, 9.67889 )
+transform/scale = Vector2( 2.88924, 2.04695 )
+
 shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 1

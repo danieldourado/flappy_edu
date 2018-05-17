@@ -8,29 +8,31 @@
 
 [node name="ground" parent="." instance=ExtResource( 1 )]
 
-[node name="Obstaculo Muro3" parent="." instance=ExtResource( 2 )]
+[node name="resize_fase14" type="Node2D" parent="."]
 
-transform/pos = Vector2( 1460.84, -694.313 )
+transform/pos = Vector2( 1599.34, -390.356 )
+transform/scale = Vector2( 0.63, 0.63 )
 
-[node name="Obstaculo Muro4" parent="." instance=ExtResource( 2 )]
+[node name="Obstaculo Muro3" parent="resize_fase14" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1463.36, 1118.31 )
+[node name="Obstaculo Muro4" parent="resize_fase14" instance=ExtResource( 2 )]
 
-[node name="Obstaculo Rotatorio" parent="." instance=ExtResource( 3 )]
+transform/pos = Vector2( 2.52002, 1812.62 )
+
+[node name="Obstaculo Rotatorio" parent="resize_fase14" instance=ExtResource( 3 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1468.01, 389.493 )
+transform/pos = Vector2( 7.17004, 1083.81 )
 transform/rot = -43.9823
 transform/scale = Vector2( 0.403052, 0.403052 )
 rotation_velocity = 1.5
 
-[node name="Obstaculo Rotatorio1" parent="." instance=ExtResource( 3 )]
+[node name="Obstaculo Rotatorio1" parent="resize_fase14" instance=ExtResource( 3 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1468.01, 940.833 )
+transform/pos = Vector2( 7.17004, 1635.15 )
 transform/rot = -45.0265
 transform/scale = Vector2( 0.403052, 0.403052 )
 rotation_velocity = -1.5
 
 
-[editable path="Obstaculo Rotatorio"]
