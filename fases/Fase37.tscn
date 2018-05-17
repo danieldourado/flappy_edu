@@ -17,13 +17,16 @@ transform/scale = Vector2( 0.63, 0.63 )
 [node name="Obstaculo Rotatorio" parent="resize_fase37" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1525.42, 255.438 )
+
 transform/rot = -63.2589
 transform/scale = Vector2( 0.35, 0.35 )
 rotation_velocity = 3.3
 
 [node name="Obstaculo Muro 1" parent="resize_fase37" instance=ExtResource( 3 )]
 
+
 transform/pos = Vector2( 1556.86, 1282.75 )
+
 
 [node name="Obstaculo Muro3" parent="resize_fase37" instance=ExtResource( 3 )]
 
@@ -31,7 +34,9 @@ transform/pos = Vector2( 2294.77, 337.681 )
 
 [node name="Obstaculo Muro2" parent="resize_fase37" instance=ExtResource( 3 )]
 
+
 transform/pos = Vector2( 1556.86, 588.56 )
+
 
 [node name="Obstaculo Muro3 2" parent="resize_fase37" instance=ExtResource( 3 )]
 
@@ -40,7 +45,9 @@ transform/pos = Vector2( 2294.77, -356.508 )
 [node name="ObstaculoMovel" parent="resize_fase37" instance=ExtResource( 4 )]
 
 editor/display_folded = true
+
 transform/pos = Vector2( 2146.42, 721.81 )
+
 transform/rot = 90.0
 transform/scale = Vector2( 0.65, 0.65 )
 speed = 1.2
@@ -50,6 +57,7 @@ delay_to_start = 1.5
 
 editor/display_folded = true
 transform/pos = Vector2( 0, -637.426 )
+
 
 [node name="Position1" parent="resize_fase37/ObstaculoMovel"]
 
@@ -63,10 +71,12 @@ transform/pos = Vector2( 0, -641.522 )
 
 editor/display_folded = true
 transform/pos = Vector2( 1703.86, 1052.99 )
+
 transform/rot = 90.0
 transform/scale = Vector2( 0.65, 0.65 )
 speed = 1.2
 delay_to_start = 2.8
+
 
 [node name="GarrasMoveis" parent="resize_fase37/ObstaculoMovel1"]
 
@@ -79,6 +89,7 @@ transform/pos = Vector2( 0, -26.5015 )
 [node name="Position2" parent="resize_fase37/ObstaculoMovel1"]
 
 transform/pos = Vector2( 0, 615.384 )
+
 
 
 [editable path="resize_fase37/ObstaculoMovel"]
