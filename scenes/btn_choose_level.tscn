@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://sprites/interface/button_play_normal.png" type="Texture" id=1]
+[ext_resource path="res://sprites/interface/button_play_pressed.png" type="Texture" id=2]
+[ext_resource path="res://scripts/btn_choose_level.gd" type="Script" id=3]
+
+[node name="btn_play" type="TextureButton"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 268.0
+margin/bottom = 152.5
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 1 )
+textures/pressed = ExtResource( 2 )
+params/resize_mode = 0
+params/scale = Vector2( 0.5, 0.5 )
+params/stretch_mode = 6
+script/script = ExtResource( 3 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+
+rect/scale = Vector2( 5, 5 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 22.0
+margin/right = 54.0
+margin/bottom = 49.0
+alignment = 1
+
+

@@ -31,33 +31,39 @@ transform/pos = Vector2( 0, 142 )
 transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 2 )
 
+[node name="Sprite9" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 186.811 )
+transform/scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 2 )
+
 [node name="Sprite3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 220 )
+transform/pos = Vector2( 0, 233 )
 transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 3 )
 
 [node name="Sprite4" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 281 )
+transform/pos = Vector2( 0, 289 )
 transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 4 )
 
 [node name="Sprite5" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 378 )
+transform/pos = Vector2( 0, 385 )
 transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 5 )
 
 [node name="Sprite6" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 477 )
+transform/pos = Vector2( 0, 481 )
 transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 6 )
 
 [node name="Sprite7" type="Sprite" parent="."]
 
-transform/pos = Vector2( 0, 538 )
+transform/pos = Vector2( 0, 542.599 )
 transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 7 )
 

@@ -22,7 +22,7 @@
 [ext_resource path="res://sprites/rect_black.png" type="Texture" id=20]
 [ext_resource path="res://sprites/interface/button_resume.png" type="Texture" id=21]
 [ext_resource path="res://sprites/interface/button_menu.png" type="Texture" id=22]
-[ext_resource path="res://fases/Fase37.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/spawner_level.tscn" type="PackedScene" id=23]
 
 [sub_resource type="GDScript" id=1]
 
@@ -556,17 +556,8 @@ y_variation = 200.0
 transform/pos = Vector2( 0, 625.44 )
 z/z = -1
 z/relative = false
-scene_name = "predios_parallax"
-speed = 0.25
-y_variation = 0.0
-
-[node name="spawner_parallax_predios2" parent="." instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 0, 755.44 )
-z/z = -1
-z/relative = false
 scene_name = "predios2_parallax"
-speed = 0.5
+speed = 0.25
 y_variation = 0.0
 
 [node name="spawner_parallax_mato" parent="." instance=ExtResource( 1 )]
@@ -621,7 +612,6 @@ script/script = SubResource( 1 )
 
 [node name="hud" type="CanvasLayer" parent="."]
 
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -662,7 +652,6 @@ stretch_mode = 0
 
 [node name="hbox_score" type="HBoxContainer" parent="hud"]
 
-editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = false
 size_flags/horizontal = 2
@@ -859,7 +848,6 @@ autoplay = ""
 
 [node name="hbox_buttons" type="HBoxContainer" parent="hud/cntr_gameover"]
 
-editor/display_folded = true
 rect/scale = Vector2( 0.6, 0.6 )
 focus/ignore_mouse = false
 focus/stop_mouse = false
@@ -945,9 +933,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 10.0
-margin/top = 10.0
+margin/top = 29.0
 margin/right = 1150.0
-margin/bottom = 1150.0
+margin/bottom = 1169.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -981,6 +969,6 @@ params/scale = Vector2( 2, 2 )
 params/stretch_mode = 0
 script/script = SubResource( 18 )
 
-[node name="Fase37" parent="." instance=ExtResource( 23 )]
+[node name="Node2D" parent="." instance=ExtResource( 23 )]
 
 

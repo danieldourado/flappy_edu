@@ -7,57 +7,64 @@
 
 [node name="ground" parent="." instance=ExtResource( 1 )]
 
-[node name="ObstaculoMovel" parent="." instance=ExtResource( 2 )]
+[node name="resize_fase7" type="Node2D" parent="."]
+
+transform/pos = Vector2( 1053.26, 35.2454 )
+transform/scale = Vector2( 0.63, 0.63 )
+
+[node name="ObstaculoMovel" parent="resize_fase7" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 895.369, 510.081 )
 
-[node name="GarrasMoveis" parent="ObstaculoMovel"]
+[node name="GarrasMoveis" parent="resize_fase7/ObstaculoMovel"]
 
 editor/display_folded = true
 transform/pos = Vector2( 0, -140.407 )
 
-[node name="Position1" parent="ObstaculoMovel"]
+[node name="Position1" parent="resize_fase7/ObstaculoMovel"]
 
-transform/pos = Vector2( 0, -348.209 )
+transform/pos = Vector2( 0, -389.047 )
 
-[node name="Position2" parent="ObstaculoMovel"]
+[node name="Position2" parent="resize_fase7/ObstaculoMovel"]
 
-transform/pos = Vector2( 0, 674.56 )
+transform/pos = Vector2( 0, 784.373 )
 
-[node name="ObstaculoMovel1" parent="." instance=ExtResource( 2 )]
+[node name="ObstaculoMovel1" parent="resize_fase7" instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1305.2, 510.081 )
 
-[node name="GarrasMoveis" parent="ObstaculoMovel1"]
+[node name="GarrasMoveis" parent="resize_fase7/ObstaculoMovel1"]
 
 editor/display_folded = true
 transform/pos = Vector2( 0, 459.167 )
 
-[node name="Position1" parent="ObstaculoMovel1"]
+[node name="Position1" parent="resize_fase7/ObstaculoMovel1"]
 
-transform/pos = Vector2( 0, 668.79 )
+transform/pos = Vector2( 0, 778.603 )
 
-[node name="Position2" parent="ObstaculoMovel1"]
+[node name="Position2" parent="resize_fase7/ObstaculoMovel1"]
 
-transform/pos = Vector2( 0, -342.44 )
+transform/pos = Vector2( 0, -383.278 )
 
-[node name="ObstaculoMovel2" parent="." instance=ExtResource( 2 )]
+[node name="ObstaculoMovel2" parent="resize_fase7" instance=ExtResource( 2 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1764.37, 510.081 )
 
-[node name="GarrasMoveis" parent="ObstaculoMovel2"]
+[node name="GarrasMoveis" parent="resize_fase7/ObstaculoMovel2"]
 
 transform/pos = Vector2( 0, -136.612 )
 
-[node name="Position1" parent="ObstaculoMovel2"]
+[node name="Position1" parent="resize_fase7/ObstaculoMovel2"]
 
-transform/pos = Vector2( 0, -348.209 )
+transform/pos = Vector2( 0, -389.047 )
 
-[node name="Position2" parent="ObstaculoMovel2"]
+[node name="Position2" parent="resize_fase7/ObstaculoMovel2"]
 
-transform/pos = Vector2( 0, 670.765 )
+transform/pos = Vector2( 0, 780.578 )
 
 
-[editable path="ObstaculoMovel"]
-[editable path="ObstaculoMovel1"]
-[editable path="ObstaculoMovel2"]
+[editable path="resize_fase7/ObstaculoMovel"]
+[editable path="resize_fase7/ObstaculoMovel1"]
+[editable path="resize_fase7/ObstaculoMovel2"]
