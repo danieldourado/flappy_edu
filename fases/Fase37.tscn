@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstaculo_rotatorio.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=5]
 
 [node name="Fase37" type="Node2D"]
 
@@ -17,16 +18,13 @@ transform/scale = Vector2( 0.63, 0.63 )
 [node name="Obstaculo Rotatorio" parent="resize_fase37" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1525.42, 255.438 )
-
 transform/rot = -63.2589
 transform/scale = Vector2( 0.35, 0.35 )
 rotation_velocity = 3.3
 
 [node name="Obstaculo Muro 1" parent="resize_fase37" instance=ExtResource( 3 )]
 
-
 transform/pos = Vector2( 1556.86, 1282.75 )
-
 
 [node name="Obstaculo Muro3" parent="resize_fase37" instance=ExtResource( 3 )]
 
@@ -34,9 +32,7 @@ transform/pos = Vector2( 2294.77, 337.681 )
 
 [node name="Obstaculo Muro2" parent="resize_fase37" instance=ExtResource( 3 )]
 
-
 transform/pos = Vector2( 1556.86, 588.56 )
-
 
 [node name="Obstaculo Muro3 2" parent="resize_fase37" instance=ExtResource( 3 )]
 
@@ -45,9 +41,7 @@ transform/pos = Vector2( 2294.77, -356.508 )
 [node name="ObstaculoMovel" parent="resize_fase37" instance=ExtResource( 4 )]
 
 editor/display_folded = true
-
 transform/pos = Vector2( 2146.42, 721.81 )
-
 transform/rot = 90.0
 transform/scale = Vector2( 0.65, 0.65 )
 speed = 1.2
@@ -57,7 +51,6 @@ delay_to_start = 1.5
 
 editor/display_folded = true
 transform/pos = Vector2( 0, -637.426 )
-
 
 [node name="Position1" parent="resize_fase37/ObstaculoMovel"]
 
@@ -71,12 +64,10 @@ transform/pos = Vector2( 0, -641.522 )
 
 editor/display_folded = true
 transform/pos = Vector2( 1703.86, 1052.99 )
-
 transform/rot = 90.0
 transform/scale = Vector2( 0.65, 0.65 )
 speed = 1.2
 delay_to_start = 2.8
-
 
 [node name="GarrasMoveis" parent="resize_fase37/ObstaculoMovel1"]
 
@@ -90,6 +81,17 @@ transform/pos = Vector2( 0, -26.5015 )
 
 transform/pos = Vector2( 0, 615.384 )
 
+[node name="coin" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1882.52, 834.278 )
+
+[node name="coin1" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 2371.55, 86.5728 )
+
+[node name="coin2" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 2593.09, 783.927 )
 
 
 [editable path="resize_fase37/ObstaculoMovel"]
