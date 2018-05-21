@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 
 [node name="Fase7" type="Node2D"]
 
@@ -63,6 +64,18 @@ transform/pos = Vector2( 0, -389.047 )
 [node name="Position2" parent="resize_fase7/ObstaculoMovel2"]
 
 transform/pos = Vector2( 0, 780.578 )
+
+[node name="coin" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1416.3, 875.334 )
+
+[node name="coin1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2019.23, 63.6256 )
+
+[node name="coin2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2250.25, 871.096 )
 
 
 [editable path="resize_fase7/ObstaculoMovel"]

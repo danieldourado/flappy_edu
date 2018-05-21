@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 
 [node name="Fase5" type="Node2D"]
 
@@ -35,5 +36,17 @@ transform/rot = -60.0
 
 transform/pos = Vector2( 2845.49, 397.15 )
 transform/rot = -60.0
+
+[node name="coin" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 1505.54, 74.1808 )
+
+[node name="coin1" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2658.86, 882.677 )
+
+[node name="coin2" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 2490.73, 62.4588 )
 
 

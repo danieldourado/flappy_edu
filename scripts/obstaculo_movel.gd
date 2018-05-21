@@ -12,10 +12,10 @@ export var delay_to_start = 0.1
 
 func _ready():
 	self.set_rot(self.get_global_transform().get_rotation())
-	self.GarrasMoveis.set_pos(Position2.get_pos())
 	
 	if self.mortal:
 		self.GarrasMoveis.add_to_group(game.GROUP_PIPES)
+	self.GarrasMoveis.set_pos(Position2.get_pos())
 	if self.speed <=0: return
 	timer.connect("timeout", self, "start")
 	timer.set_wait_time(self.delay_to_start)
