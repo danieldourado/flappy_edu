@@ -612,7 +612,6 @@ script/script = SubResource( 1 )
 
 [node name="hud" type="CanvasLayer" parent="."]
 
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -620,15 +619,14 @@ scale = Vector2( 1, 1 )
 
 [node name="btn_instructions" type="TextureButton" parent="hud"]
 
-editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 418.0
-margin/top = -342.0
-margin/right = 2338.0
-margin/bottom = 738.0
+margin/left = 509.0
+margin/top = -145.0
+margin/right = 2429.0
+margin/bottom = 935.0
 toggle_mode = false
 click_on_press = true
 enabled_focus_mode = 2
@@ -639,16 +637,21 @@ script/script = SubResource( 2 )
 
 [node name="texture" type="TextureFrame" parent="hud/btn_instructions"]
 
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
 rect/scale = Vector2( 10, 10 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 244.0
-margin/top = 443.0
-margin/right = 301.0
-margin/bottom = 492.0
+margin/left = 718.0
+margin/top = 95.0
+margin/right = 657.0
+margin/bottom = 51.0
 texture = ExtResource( 7 )
+expand = true
 stretch_mode = 0
 
 [node name="hbox_score" type="HBoxContainer" parent="hud"]
@@ -685,16 +688,16 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 1787.0
+margin/left = 1764.0
 margin/top = 10.0
-margin/right = 1813.0
-margin/bottom = 38.0
+margin/right = 1801.0
+margin/bottom = 47.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 9 )
 params/resize_mode = 0
-params/scale = Vector2( 2, 2 )
+params/scale = Vector2( 0.15, 0.15 )
 params/stretch_mode = 0
 script/script = SubResource( 4 )
 
@@ -970,6 +973,6 @@ params/scale = Vector2( 2, 2 )
 params/stretch_mode = 0
 script/script = SubResource( 18 )
 
-[node name="Node2D" parent="." instance=ExtResource( 23 )]
+[node name="spawner_level" parent="." instance=ExtResource( 23 )]
 
 
