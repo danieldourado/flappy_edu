@@ -11,7 +11,8 @@
 
 [node name="resize_fase31" type="Node2D" parent="."]
 
-transform/pos = Vector2( 586.456, -6.15161 )
+editor/display_folded = true
+transform/pos = Vector2( 780.307, -6.15161 )
 transform/scale = Vector2( 0.73, 0.73 )
 
 [node name="Obstaculo Muro 1" parent="resize_fase31" instance=ExtResource( 2 )]
@@ -37,7 +38,7 @@ transform/rot = -60.0
 [node name="ObstaculoMovel" parent="." instance=ExtResource( 3 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1671.07, 632.63 )
+transform/pos = Vector2( 1864.92, 632.63 )
 transform/rot = -150.82
 transform/scale = Vector2( 0.219, 0.219 )
 speed = 1.0
@@ -49,7 +50,7 @@ transform/pos = Vector2( 17.2969, 719.298 )
 [node name="ObstaculoMovel1" parent="." instance=ExtResource( 3 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1862.67, 515.872 )
+transform/pos = Vector2( 2056.52, 515.872 )
 transform/rot = -150.82
 transform/scale = Vector2( 0.219, 0.219 )
 speed = 1.0
@@ -62,7 +63,7 @@ transform/pos = Vector2( 17.2969, 719.298 )
 [node name="ObstaculoMovel2" parent="." instance=ExtResource( 3 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 2045.29, 412.586 )
+transform/pos = Vector2( 2239.14, 412.586 )
 transform/rot = -150.82
 transform/scale = Vector2( 0.219, 0.219 )
 speed = 1.0
@@ -71,51 +72,25 @@ speed = 1.0
 
 transform/pos = Vector2( 17.2969, 719.298 )
 
-[node name="ObstaculoMovel3" parent="." instance=ExtResource( 3 )]
-
-editor/display_folded = true
-transform/pos = Vector2( 798.088, 104.25 )
-transform/rot = -150.82
-transform/scale = Vector2( 0.219, 0.219 )
-speed = 1.0
-delay_to_start = 2.0
-
 [node name="coin" parent="." instance=ExtResource( 4 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1599.8, 509.609 )
+transform/pos = Vector2( 1793.65, 509.609 )
 transform/scale = Vector2( 0.73, 0.73 )
 
 [node name="coin1" parent="." instance=ExtResource( 4 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1918.11, 611.393 )
+transform/pos = Vector2( 2111.96, 611.393 )
 transform/scale = Vector2( 0.73, 0.73 )
 
 [node name="coin2" parent="." instance=ExtResource( 4 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1975.48, 278.282 )
+transform/pos = Vector2( 2169.33, 278.282 )
 transform/scale = Vector2( 0.73, 0.73 )
-
-[node name="coin 2" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 851.793, 185.39 )
-
-[node name="coin 3" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 1120.69, 222.134 )
-
-[node name="coin 4" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 160.338, 389.152 )
-
-[node name="coin 5" parent="." instance=ExtResource( 4 )]
-
-transform/pos = Vector2( 491.034, 302.303 )
 
 
 [editable path="ObstaculoMovel"]
 [editable path="ObstaculoMovel1"]
 [editable path="ObstaculoMovel2"]
-[editable path="ObstaculoMovel3"]
