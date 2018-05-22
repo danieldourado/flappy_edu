@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_rotatorio.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=5]
 
 [node name="Fase15" type="Node2D"]
 
@@ -39,7 +40,7 @@ rotation_velocity = -3.0
 [node name="ObstaculoMovel" parent="resize_fase15" instance=ExtResource( 4 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1378.04, 1121.05 )
+transform/pos = Vector2( 1480.48, 1121.05 )
 speed = 1.7
 
 [node name="Position1" parent="resize_fase15/ObstaculoMovel"]
@@ -49,6 +50,18 @@ transform/pos = Vector2( 0, -570.353 )
 [node name="Position2" parent="resize_fase15/ObstaculoMovel"]
 
 transform/pos = Vector2( 0, 566.993 )
+
+[node name="coin" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 2243.75, 879.099 )
+
+[node name="coin1" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1381.83, 868.846 )
+
+[node name="coin2" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 1575.58, 75.7198 )
 
 
 [editable path="resize_fase15/ObstaculoMovel"]

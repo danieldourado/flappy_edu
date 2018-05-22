@@ -13,7 +13,7 @@ transform/pos = Vector2( 2255.99, 102.428 )
 
 [node name="coin44" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1595.87, 696.024 )
+transform/pos = Vector2( 1595.87, 873.063 )
 
 [node name="coin45" parent="." instance=ExtResource( 2 )]
 

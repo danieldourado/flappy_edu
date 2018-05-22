@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstaculo_rotatorio.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=4]
 
 [node name="Fase17" type="Node2D"]
 
@@ -16,7 +17,7 @@ transform/scale = Vector2( 0.63, 0.63 )
 [node name="Obstaculo Rotatorio" parent="resize_fase17" instance=ExtResource( 2 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1934.55, 669.565 )
+transform/pos = Vector2( 1934.55, 754.4 )
 transform/rot = -25.4766
 transform/scale = Vector2( 0.3, 0.3 )
 rotation_velocity = -3.15
@@ -52,5 +53,17 @@ transform/pos = Vector2( 2729.68, 582.213 )
 [node name="Obstaculo Muro53" parent="resize_fase17" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 2729.68, 1278.75 )
+
+[node name="coin" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1715.41, 272.649 )
+
+[node name="coin1" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 1499.11, 803.917 )
+
+[node name="coin2" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 2049.35, 86.7045 )
 
 

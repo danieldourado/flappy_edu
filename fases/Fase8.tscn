@@ -12,7 +12,7 @@
 [node name="resize_fase8" type="Node2D" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 1909.96, 703.51 )
+transform/pos = Vector2( 2240.11, 703.51 )
 transform/rot = 90.0
 transform/scale = Vector2( 0.63, 0.63 )
 
@@ -55,11 +55,11 @@ transform/rot = -90.0
 [node name="ObstaculoMovel" parent="." instance=ExtResource( 3 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1982.53, 694.65 )
+transform/pos = Vector2( 2312.68, 694.65 )
 transform/rot = 90.0
 transform/scale = Vector2( 0.63, 0.63 )
 speed = 1.8
-delay_to_start = 0.6
+delay_to_start = 0.4
 
 [node name="Position1" parent="ObstaculoMovel"]
 
@@ -71,15 +71,15 @@ transform/pos = Vector2( 0, 472.781 )
 
 [node name="coin" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1676.86, 865.155 )
+transform/pos = Vector2( 2007.01, 865.155 )
 
 [node name="coin1" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 2333.25, 865.155 )
+transform/pos = Vector2( 2663.4, 865.155 )
 
 [node name="coin2" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 2450.16, 514.416 )
+transform/pos = Vector2( 2780.31, 514.416 )
 
 
 [editable path="resize_fase8/Obstaculo Muro 1"]
