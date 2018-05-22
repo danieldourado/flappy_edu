@@ -81,6 +81,7 @@ class FlyingState:
 	func _init(bird):
 		self.bird = bird
 		bird.get_node("anim").play("flying")
+		bird.get_node("anim_sprite").play("flying")
 		bird.set_linear_velocity(Vector2(bird.speed, bird.get_linear_velocity().y))
 		
 		prev_gravity_scale = bird.gravity_force
@@ -106,7 +107,7 @@ class FlappingState:
 	
 	func _init(bird):
 		self.bird = bird
-		
+		bird.get_node("anim_sprite").play("flap")
 		bird.set_linear_velocity(Vector2(bird.speed, bird.get_linear_velocity().y))
 		flap()
 		pass
@@ -160,7 +161,7 @@ class HitState:
 		self.bird = bird
 		bird.set_linear_velocity(Vector2(0, 0))
 		bird.set_angular_velocity(2)
-		
+		bird.get_node("anim_sprite").play("flying")
 		var other_body = bird.get_colliding_bodies()[0]
 		bird.add_collision_exception_with(other_body)
 		
@@ -194,7 +195,7 @@ class GroundedState:
 		self.bird = bird
 		bird.set_linear_velocity(Vector2(0, 0))
 		bird.set_angular_velocity(0)
-		
+		bird.get_node("anim_sprite").play("idle")
 		if bird.prev_state != bird.STATE_HIT:
 			audio_player.play("sfx_hit")
 		pass
