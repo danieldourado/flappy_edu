@@ -10,7 +10,8 @@
 
 [node name="resize_fase7" type="Node2D" parent="."]
 
-transform/pos = Vector2( 1053.26, 35.2454 )
+editor/display_folded = true
+transform/pos = Vector2( 1243, 35.2454 )
 transform/scale = Vector2( 0.63, 0.63 )
 
 [node name="ObstaculoMovel" parent="resize_fase7" instance=ExtResource( 2 )]
@@ -67,15 +68,15 @@ transform/pos = Vector2( 0, 780.578 )
 
 [node name="coin" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1416.3, 875.334 )
+transform/pos = Vector2( 1606.04, 875.334 )
 
 [node name="coin1" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2019.23, 63.6256 )
+transform/pos = Vector2( 2208.97, 63.6256 )
 
 [node name="coin2" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2250.25, 871.096 )
+transform/pos = Vector2( 2439.99, 871.096 )
 
 
 [editable path="resize_fase7/ObstaculoMovel"]

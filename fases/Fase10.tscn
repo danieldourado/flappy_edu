@@ -10,7 +10,8 @@
 
 [node name="resize_fase10" type="Node2D" parent="."]
 
-transform/pos = Vector2( 595.496, 102.498 )
+editor/display_folded = true
+transform/pos = Vector2( 887.693, 102.498 )
 transform/scale = Vector2( 0.63, 0.63 )
 
 [node name="Obstaculo Muro 1" parent="resize_fase10" instance=ExtResource( 2 )]
@@ -39,14 +40,14 @@ transform/pos = Vector2( 1201.87, -531.249 )
 
 [node name="coin" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1520.28, 159.002 )
+transform/pos = Vector2( 1812.48, 159.002 )
 
 [node name="coin1" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1835.49, 789.429 )
+transform/pos = Vector2( 2127.69, 789.429 )
 
 [node name="coin2" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2212.07, 64.1586 )
+transform/pos = Vector2( 2504.27, 64.1586 )
 
 

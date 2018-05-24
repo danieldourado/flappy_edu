@@ -52,7 +52,7 @@ transform/rot = 90.0
 
 [node name="coin" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2105.39, 851.696 )
+transform/pos = Vector2( 2090.58, 368.683 )
 
 [node name="coin1" parent="." instance=ExtResource( 3 )]
 
@@ -60,7 +60,7 @@ transform/pos = Vector2( 2207.36, 855.397 )
 
 [node name="coin2" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2309.14, 855.397 )
+transform/pos = Vector2( 2318.39, 383.488 )
 
 [node name="ObstaculoMovel" parent="." instance=ExtResource( 4 )]
 

@@ -15,7 +15,7 @@ transform/scale = Vector2( 0.7, 0.7 )
 
 [node name="Obstaculo Garra" parent="resize_fase40" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1741.09, 292.432 )
+transform/pos = Vector2( 1741.09, 322.248 )
 transform/scale = Vector2( 0.8, 0.8 )
 
 [node name="Obstaculo Garra1" parent="resize_fase40" instance=ExtResource( 2 )]
@@ -25,12 +25,12 @@ transform/scale = Vector2( 0.8, 0.8 )
 
 [node name="Obstaculo Garra9" parent="resize_fase40" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 3336.7, 318.14 )
+transform/pos = Vector2( 3336.7, 347.352 )
 transform/scale = Vector2( 0.8, 0.8 )
 
 [node name="Obstaculo Garra2" parent="resize_fase40" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1395.2, 284.063 )
+transform/pos = Vector2( 1395.2, 313.879 )
 transform/rot = 44.5401
 transform/scale = Vector2( 0.8, 0.8 )
 

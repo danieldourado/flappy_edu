@@ -12,7 +12,6 @@
 
 [node name="resize_fase38" type="Node2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 628.747, 210.709 )
 transform/scale = Vector2( 0.634873, 0.634873 )
 
