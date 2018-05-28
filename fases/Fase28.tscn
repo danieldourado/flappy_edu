@@ -1,24 +1,21 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=4 format=1]
 
-[ext_resource path="res://scenes/ground.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 
 [node name="Fase28" type="Node2D"]
-
-[node name="ground" parent="." instance=ExtResource( 1 )]
 
 [node name="resize_fase28" type="Node2D" parent="."]
 
 transform/pos = Vector2( 778.899, 6.15164 )
 transform/scale = Vector2( 0.692, 0.692 )
 
-[node name="Obstaculo Muro 1" parent="resize_fase28" instance=ExtResource( 2 )]
+[node name="Obstaculo Muro 1" parent="resize_fase28" instance=ExtResource( 1 )]
 
 transform/pos = Vector2( 1759.64, -142.857 )
 
-[node name="ObstaculoMovel" parent="." instance=ExtResource( 3 )]
+[node name="ObstaculoMovel" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 2098.63, 563.504 )
@@ -34,7 +31,7 @@ editor/display_folded = true
 
 transform/pos = Vector2( -1.30853, 1.42908 )
 
-[node name="ObstaculoMovel2" parent="." instance=ExtResource( 3 )]
+[node name="ObstaculoMovel2" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 1898.6, 565.63 )
@@ -46,7 +43,7 @@ speed = 0.0
 
 transform/pos = Vector2( -1.00781, -1.1897 )
 
-[node name="ObstaculoMovel3" parent="." instance=ExtResource( 3 )]
+[node name="ObstaculoMovel3" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 1603.75, 861.657 )
@@ -58,7 +55,7 @@ speed = 0.0
 
 transform/pos = Vector2( 0.248047, -0.423462 )
 
-[node name="ObstaculoMovel1" parent="." instance=ExtResource( 3 )]
+[node name="ObstaculoMovel1" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 2420.43, 861.111 )
@@ -70,15 +67,15 @@ speed = 0.0
 
 transform/pos = Vector2( -1.44977, -0.234131 )
 
-[node name="coin" parent="." instance=ExtResource( 4 )]
+[node name="coin" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1582.53, 58.7266 )
 
-[node name="coin1" parent="." instance=ExtResource( 4 )]
+[node name="coin1" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 2007.1, 887.139 )
 
-[node name="coin2" parent="." instance=ExtResource( 4 )]
+[node name="coin2" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 2424.63, 76.1906 )
 

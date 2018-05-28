@@ -553,6 +553,7 @@ y_variation = 200.0
 
 [node name="spawner_parallax_predios" parent="." instance=ExtResource( 1 )]
 
+visibility/visible = false
 transform/pos = Vector2( 0, 625.44 )
 z/z = -1
 z/relative = false

@@ -1,0 +1,75 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scripts/obstaculo_movel.gd" type="Script" id=1]
+[ext_resource path="res://sprites/obstacles/BARRA_MENOR.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5.13232, 2.47471 )
+
+[node name="ObstaculoMovel2" type="StaticBody2D"]
+
+transform/pos = Vector2( 534.865, 931.301 )
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 1 )
+speed = 2.2
+mortal = true
+delay_to_start = 0.1
+
+[node name="GarrasMoveis" type="StaticBody2D" parent="."]
+
+transform/scale = Vector2( 0.5, 0.5 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 3.70968, 0, 0, 34.02, -0.580566, -0.0585938 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="garras_moveis_sprite" type="Sprite" parent="GarrasMoveis"]
+
+transform/rot = 90.0
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GarrasMoveis"]
+
+transform/pos = Vector2( -0.580566, -0.0585938 )
+transform/scale = Vector2( 3.70968, 34.02 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Position1" type="Position2D" parent="."]
+
+transform/pos = Vector2( 0, -500 )
+
+[node name="Position2" type="Position2D" parent="."]
+
+transform/pos = Vector2( 0, 500 )
+
+[node name="Tween" type="Tween" parent="."]
+
+playback/process_mode = 1
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+
