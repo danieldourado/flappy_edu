@@ -1,0 +1,105 @@
+[gd_scene load_steps=11 format=1]
+
+[ext_resource path="res://sprites/obstacles/BATERIA_00047.png" type="Texture" id=1]
+[ext_resource path="res://sprites/obstacles/BATERIA_00048.png" type="Texture" id=2]
+[ext_resource path="res://sprites/obstacles/9_RAIO_CICLO_01.png" type="Texture" id=3]
+[ext_resource path="res://sprites/obstacles/9_RAIO_CICLO_02.png" type="Texture" id=4]
+[ext_resource path="res://sprites/obstacles/9_RAIO_CICLO_03.png" type="Texture" id=5]
+[ext_resource path="res://sprites/obstacles/9_RAIO_CICLO_04.png" type="Texture" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 22.3398, 461.922 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 9.62257, 10 )
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 30.0
+} ]
+
+[node name="obstaculo_raio" type="StaticBody2D"]
+
+transform/scale = Vector2( 0.5, 0.5 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 410 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 8.65795, 0, 0, 6.46119, 0.460281, -112.359 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 2 )
+shapes/2/transform = Matrix32( 8.65795, 0, 0, 6.46119, -0.937302, 929.531 )
+shapes/2/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+
+frames = SubResource( 3 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 7.16867e-05, 820 )
+transform/rot = -180.0
+frames = SubResource( 3 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite1" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( -4.20471, 401.695 )
+frames = SubResource( 4 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 0, 410 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="CollisionShape2D 2" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 0.460281, -112.359 )
+transform/scale = Vector2( 8.65795, 6.46119 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 1
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -0.937302, 929.531 )
+transform/scale = Vector2( 8.65795, 6.46119 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 2
+
+
