@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=1]
 
-[ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/obstaculo_rotatorio.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/obstaculo_rotatorio.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
+
 
 [node name="Fase13" type="Node2D"]
 
@@ -14,18 +14,13 @@ transform/pos = Vector2( 2179.06, 222.066 )
 transform/rot = -0.0204291
 transform/scale = Vector2( 0.7, 0.7 )
 
-[node name="Obstaculo Muro 1" parent="resize_fase13" instance=ExtResource( 1 )]
-
-transform/pos = Vector2( -1455.21, -488.017 )
-transform/rot = 25.2966
-
-[node name="Obstaculo Rotatorio" parent="resize_fase13" instance=ExtResource( 2 )]
+[node name="Obstaculo Rotatorio" parent="resize_fase13" instance=ExtResource( 1 )]
 
 transform/pos = Vector2( -839.804, 634.614 )
 transform/rot = -80.6857
 rotation_velocity = -1.5
 
-[node name="ObstaculoMovel" parent="." instance=ExtResource( 3 )]
+[node name="ObstaculoMovel" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 2179.06, 222.066 )
@@ -45,7 +40,7 @@ transform/pos = Vector2( 0.0722656, -144.912 )
 
 transform/pos = Vector2( 0.0985107, 856.188 )
 
-[node name="ObstaculoMovel1" parent="." instance=ExtResource( 3 )]
+[node name="ObstaculoMovel1" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
 transform/pos = Vector2( 2596.86, 377.894 )
@@ -60,21 +55,23 @@ transform/pos = Vector2( 0.118408, -644.608 )
 
 transform/pos = Vector2( -0.0598145, 365.008 )
 
-[node name="coin" parent="." instance=ExtResource( 4 )]
+[node name="coin" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1688.42, 78.7701 )
 
-[node name="coin1" parent="." instance=ExtResource( 4 )]
+[node name="coin1" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 2182.6, 864.13 )
 
-[node name="coin2" parent="." instance=ExtResource( 4 )]
+[node name="coin2" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 2418.42, 378.15 )
 
-[node name="obstaculo_raio" parent="." instance=ExtResource( 5 )]
+[node name="obstaculo_raio" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 466.001, 130.688 )
+transform/pos = Vector2( 1154.86, -128.318 )
+transform/rot = 25.3
+transform/scale = Vector2( 0.6, 0.6 )
 
 
 [editable path="ObstaculoMovel"]
