@@ -553,16 +553,17 @@ y_variation = 200.0
 
 [node name="spawner_parallax_predios" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 0, 625.44 )
+transform/pos = Vector2( 0, 535.44 )
 z/z = -1
 z/relative = false
 scene_name = "predios2_parallax"
+horizontal_space = 2000
 speed = 0.25
 y_variation = 0.0
 
 [node name="spawner_parallax_mato" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 0, 925.44 )
+transform/pos = Vector2( 0, 819.44 )
 z/z = -1
 z/relative = false
 scene_name = "mato_parallax"
@@ -612,6 +613,7 @@ script/script = SubResource( 1 )
 
 [node name="hud" type="CanvasLayer" parent="."]
 
+editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -677,7 +679,11 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 72.0
 margin/top = 0.0
+<<<<<<< HEAD
+margin/right = 72.0
+=======
 margin/right = 118.0
+>>>>>>> master
 margin/bottom = 72.0
 texture = ExtResource( 8 )
 expand = true
@@ -727,15 +733,14 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 393.0
-margin/top = 463.0
+margin/top = 461.0
 margin/right = -1599.0
-margin/bottom = -102.0
+margin/bottom = -104.0
 texture = ExtResource( 10 )
 stretch_mode = 0
 
 [node name="tex_panelscore" type="TextureFrame" parent="hud/cntr_gameover"]
 
-editor/display_folded = true
 rect/scale = Vector2( 0.4, 0.4 )
 focus/ignore_mouse = true
 focus/stop_mouse = true

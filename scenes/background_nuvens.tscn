@@ -15,6 +15,7 @@ bounce = 0.0
 
 [node name="Sprite" type="Sprite" parent="."]
 
+transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 z/relative = false
 texture = ExtResource( 1 )

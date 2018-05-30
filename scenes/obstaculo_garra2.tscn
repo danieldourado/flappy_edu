@@ -1,14 +1,15 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scripts/pipe.gd" type="Script" id=1]
 [ext_resource path="res://scenes/obstaculo2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/obstacles/BARRA_MENOR.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 23.5782, 208.034 )
+extents = Vector2( 11.7231, 49.9918 )
 
-[node name="Obstaculo Garra" type="StaticBody2D"]
+[node name="Obstaculo Garra2" type="StaticBody2D"]
 
 z/z = -1
 input/pickable = false
@@ -34,6 +35,10 @@ _update_shape_index = 0
 transform/pos = Vector2( 63, 0 )
 
 [node name="Obstaculo_Garra" parent="." instance=ExtResource( 2 )]
+
+[node name="Sprite" parent="Obstaculo_Garra"]
+
+texture = ExtResource( 3 )
 
 
 [editable path="Obstaculo_Garra"]
