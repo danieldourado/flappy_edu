@@ -2,53 +2,53 @@
 
 [ext_resource path="res://scripts/bird.gd" type="Script" id=1]
 [ext_resource path="res://sprites/bird/flying/EDU_Planando_001.png" type="Texture" id=2]
-[ext_resource path="res://sprites/bird/EDU_Voando_001.png" type="Texture" id=3]
-[ext_resource path="res://sprites/bird/EDU_Voando_002.png" type="Texture" id=4]
-[ext_resource path="res://sprites/bird/EDU_Voando_003.png" type="Texture" id=5]
-[ext_resource path="res://sprites/bird/EDU_Voando_004.png" type="Texture" id=6]
-[ext_resource path="res://sprites/bird/EDU_Voando_005.png" type="Texture" id=7]
-[ext_resource path="res://sprites/bird/EDU_Voando_006.png" type="Texture" id=8]
-[ext_resource path="res://sprites/bird/EDU_Voando_007.png" type="Texture" id=9]
-[ext_resource path="res://sprites/bird/EDU_Voando_008.png" type="Texture" id=10]
-[ext_resource path="res://sprites/bird/EDU_Voando_009.png" type="Texture" id=11]
-[ext_resource path="res://sprites/bird/EDU_Voando_010.png" type="Texture" id=12]
-[ext_resource path="res://sprites/bird/EDU_Voando_011.png" type="Texture" id=13]
-[ext_resource path="res://sprites/bird/EDU_Voando_012.png" type="Texture" id=14]
-[ext_resource path="res://sprites/bird/EDU_Voando_013.png" type="Texture" id=15]
-[ext_resource path="res://sprites/bird/EDU_Voando_014.png" type="Texture" id=16]
-[ext_resource path="res://sprites/bird/EDU_Voando_015.png" type="Texture" id=17]
-[ext_resource path="res://sprites/bird/EDU_Voando_016.png" type="Texture" id=18]
-[ext_resource path="res://sprites/bird/EDU_Voando_017.png" type="Texture" id=19]
-[ext_resource path="res://sprites/bird/EDU_Voando_018.png" type="Texture" id=20]
-[ext_resource path="res://sprites/bird/EDU_Voando_019.png" type="Texture" id=21]
-[ext_resource path="res://sprites/bird/EDU_Voando_020.png" type="Texture" id=22]
-[ext_resource path="res://sprites/bird/EDU_Voando_021.png" type="Texture" id=23]
-[ext_resource path="res://sprites/bird/EDU_Voando_022.png" type="Texture" id=24]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_002.png" type="Texture" id=25]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_003.png" type="Texture" id=26]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_004.png" type="Texture" id=27]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_005.png" type="Texture" id=28]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_006.png" type="Texture" id=29]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_007.png" type="Texture" id=30]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_008.png" type="Texture" id=31]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_009.png" type="Texture" id=32]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_010.png" type="Texture" id=33]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_011.png" type="Texture" id=34]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_012.png" type="Texture" id=35]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_013.png" type="Texture" id=36]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_014.png" type="Texture" id=37]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_015.png" type="Texture" id=38]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_016.png" type="Texture" id=39]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_017.png" type="Texture" id=40]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_018.png" type="Texture" id=41]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_019.png" type="Texture" id=42]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_020.png" type="Texture" id=43]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_021.png" type="Texture" id=44]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_022.png" type="Texture" id=45]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_023.png" type="Texture" id=46]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_024.png" type="Texture" id=47]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_025.png" type="Texture" id=48]
-[ext_resource path="res://sprites/bird/flying/EDU_Planando_026.png" type="Texture" id=49]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_002.png" type="Texture" id=3]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_003.png" type="Texture" id=4]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_004.png" type="Texture" id=5]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_005.png" type="Texture" id=6]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_006.png" type="Texture" id=7]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_007.png" type="Texture" id=8]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_008.png" type="Texture" id=9]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_009.png" type="Texture" id=10]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_010.png" type="Texture" id=11]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_011.png" type="Texture" id=12]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_012.png" type="Texture" id=13]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_013.png" type="Texture" id=14]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_014.png" type="Texture" id=15]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_015.png" type="Texture" id=16]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_016.png" type="Texture" id=17]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_017.png" type="Texture" id=18]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_018.png" type="Texture" id=19]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_019.png" type="Texture" id=20]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_020.png" type="Texture" id=21]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_021.png" type="Texture" id=22]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_022.png" type="Texture" id=23]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_023.png" type="Texture" id=24]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_024.png" type="Texture" id=25]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_025.png" type="Texture" id=26]
+[ext_resource path="res://sprites/bird/flying/EDU_Planando_026.png" type="Texture" id=27]
+[ext_resource path="res://sprites/bird/EDU_Voando_001.png" type="Texture" id=28]
+[ext_resource path="res://sprites/bird/EDU_Voando_002.png" type="Texture" id=29]
+[ext_resource path="res://sprites/bird/EDU_Voando_003.png" type="Texture" id=30]
+[ext_resource path="res://sprites/bird/EDU_Voando_004.png" type="Texture" id=31]
+[ext_resource path="res://sprites/bird/EDU_Voando_005.png" type="Texture" id=32]
+[ext_resource path="res://sprites/bird/EDU_Voando_006.png" type="Texture" id=33]
+[ext_resource path="res://sprites/bird/EDU_Voando_007.png" type="Texture" id=34]
+[ext_resource path="res://sprites/bird/EDU_Voando_008.png" type="Texture" id=35]
+[ext_resource path="res://sprites/bird/EDU_Voando_009.png" type="Texture" id=36]
+[ext_resource path="res://sprites/bird/EDU_Voando_010.png" type="Texture" id=37]
+[ext_resource path="res://sprites/bird/EDU_Voando_011.png" type="Texture" id=38]
+[ext_resource path="res://sprites/bird/EDU_Voando_012.png" type="Texture" id=39]
+[ext_resource path="res://sprites/bird/EDU_Voando_013.png" type="Texture" id=40]
+[ext_resource path="res://sprites/bird/EDU_Voando_014.png" type="Texture" id=41]
+[ext_resource path="res://sprites/bird/EDU_Voando_015.png" type="Texture" id=42]
+[ext_resource path="res://sprites/bird/EDU_Voando_016.png" type="Texture" id=43]
+[ext_resource path="res://sprites/bird/EDU_Voando_017.png" type="Texture" id=44]
+[ext_resource path="res://sprites/bird/EDU_Voando_018.png" type="Texture" id=45]
+[ext_resource path="res://sprites/bird/EDU_Voando_019.png" type="Texture" id=46]
+[ext_resource path="res://sprites/bird/EDU_Voando_020.png" type="Texture" id=47]
+[ext_resource path="res://sprites/bird/EDU_Voando_021.png" type="Texture" id=48]
+[ext_resource path="res://sprites/bird/EDU_Voando_022.png" type="Texture" id=49]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -63,14 +63,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ) ],
-"loop": true,
-"name": "flap",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
 "loop": true,
 "name": "flying",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "flap",
 "speed": 30.0
 } ]
 
@@ -173,7 +173,7 @@ x_offset = 100
 transform/scale = Vector2( 0.125, 0.125 )
 frames = SubResource( 2 )
 animation = "flap"
-frame = 19
+frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true

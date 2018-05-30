@@ -1,19 +1,25 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=3 format=1]
 
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=2]
 
 [node name="Fase1" type="Node2D"]
 
 [node name="coin37" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 2255.99, 102.428 )
+transform/pos = Vector2( 2507.74, 870.275 )
 
 [node name="coin44" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1595.87, 873.063 )
+transform/pos = Vector2( 2008.75, 64.9351 )
 
 [node name="coin45" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1172.8, 73.6633 )
+transform/pos = Vector2( 1424.55, 841.511 )
+
+[node name="obstaculo_raio" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 2004.49, 449.554 )
+transform/scale = Vector2( 0.5, 0.5 )
 
 
