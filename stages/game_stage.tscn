@@ -672,13 +672,18 @@ script/script = SubResource( 3 )
 
 [node name="tex_number_0" type="TextureFrame" parent="hud/hbox_score"]
 
+rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 72.0
 margin/top = 0.0
+<<<<<<< HEAD
 margin/right = 72.0
+=======
+margin/right = 118.0
+>>>>>>> master
 margin/bottom = 72.0
 texture = ExtResource( 8 )
 expand = true
