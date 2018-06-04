@@ -120,8 +120,8 @@ class FlappingState:
 		pass
 	
 	func update(delta):
-		if rad2deg(bird.get_rot()) > 30:
-			bird.set_rot(deg2rad(30))
+		if rad2deg(bird.get_rot()) > 30/2:
+			bird.set_rot(deg2rad(30/2))
 			bird.set_angular_velocity(0)
 	
 		if bird.get_linear_velocity().y > 0:
@@ -226,14 +226,16 @@ class EndOfLevelState:
 	
 	func _init(bird):
 		self.bird = bird
+		game.score_current += 1
 		bird.get_node("anim").play("flying")
 		bird.get_node("anim_sprite").play("flying")
 		bird.set_linear_velocity(Vector2(bird.speed, 0))
 		bird.set_rot(deg2rad(0))
 		bird.set_angular_velocity(0)
-		
 		prev_gravity_scale = bird.gravity_force
 		bird.set_gravity_scale(0)
+		if game.level_current <=stage_manager.current_level:
+			game.level_current = stage_manager.current_level+1
 		pass
 	
 	func update(delta):

@@ -11,6 +11,6 @@ func _ready():
 	pass
 
 func change_state():
-	stage_manager.change_stage(stage_manager.STAGE_MENU, null, true)
+	stage_manager.change_stage(stage_manager.STAGE_SELECT_LEVEL, null, true)
 	
 	

@@ -6,5 +6,5 @@ func _ready():
 
 func _on_pressed():
 	get_tree().set_pause(false)
-	stage_manager.change_stage(stage_manager.STAGE_MENU)
+	stage_manager.change_stage(stage_manager.STAGE_SELECT_LEVEL)
 	pass
