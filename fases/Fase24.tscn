@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
 
 [node name="Fase24" type="Node2D"]
 
@@ -57,7 +58,7 @@ transform/pos = Vector2( 2207.36, 855.397 )
 
 [node name="coin2" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 2318.39, 383.488 )
+transform/pos = Vector2( 2327.82, 366.752 )
 
 [node name="ObstaculoMovel" parent="." instance=ExtResource( 3 )]
 
@@ -73,6 +74,12 @@ transform/pos = Vector2( 0, 644.998 )
 [node name="Position2" parent="ObstaculoMovel"]
 
 transform/pos = Vector2( 0, 4.04443 )
+
+[node name="obstaculo_raio" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 3020.73, 476.495 )
+transform/rot = 90.0
+transform/scale = Vector2( 0.5, 0.5 )
 
 
 [editable path="ObstaculoMovel"]
