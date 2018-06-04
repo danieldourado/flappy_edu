@@ -30,6 +30,10 @@ transform/rot = 120.0
 transform/scale = Vector2( 0.679999, 0.68 )
 speed = 0.0
 
+[node name="GarrasMoveis" parent="ObstaculoMovel1"]
+
+transform/pos = Vector2( -0.647339, 498.688 )
+
 [node name="ObstaculoMovel2" parent="." instance=ExtResource( 1 )]
 
 editor/display_folded = true
@@ -37,6 +41,10 @@ transform/pos = Vector2( 1500.16, 875.614 )
 transform/rot = 120.0
 transform/scale = Vector2( 0.68, 0.68 )
 speed = 0.0
+
+[node name="GarrasMoveis" parent="ObstaculoMovel2"]
+
+transform/pos = Vector2( -0.646973, 498.688 )
 
 [node name="ObstaculoMovel3" parent="." instance=ExtResource( 1 )]
 
@@ -46,6 +54,10 @@ transform/rot = 120.0
 transform/scale = Vector2( 0.68, 0.68 )
 speed = 0.0
 
+[node name="GarrasMoveis" parent="ObstaculoMovel3"]
+
+transform/pos = Vector2( -0.440918, 499.827 )
+
 [node name="ObstaculoMovel4" parent="." instance=ExtResource( 1 )]
 
 editor/display_folded = true
@@ -54,26 +66,45 @@ transform/rot = 120.0
 transform/scale = Vector2( 0.68, 0.68 )
 speed = 0.0
 
+[node name="GarrasMoveis" parent="ObstaculoMovel4"]
+
+transform/pos = Vector2( -0.322266, 499.116 )
+
 [node name="ObstaculoMovel5" parent="." instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1986.22, 340.938 )
 transform/rot = 120.0
 transform/scale = Vector2( 0.68, 0.68 )
 speed = 0.0
 
+[node name="GarrasMoveis" parent="ObstaculoMovel5"]
+
+transform/pos = Vector2( -0.565063, 499.824 )
+
 [node name="ObstaculoMovel6" parent="." instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 2345.88, 739.341 )
 transform/rot = 120.0
 transform/scale = Vector2( 0.68, 0.68 )
 speed = 0.0
 
+[node name="GarrasMoveis" parent="ObstaculoMovel6"]
+
+transform/pos = Vector2( -0.151611, 500.647 )
+
 [node name="ObstaculoMovel7" parent="." instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 2430.81, 471.015 )
 transform/rot = 120.0
 transform/scale = Vector2( 0.68, 0.68 )
 speed = 0.0
+
+[node name="GarrasMoveis" parent="ObstaculoMovel7"]
+
+transform/pos = Vector2( -0.148926, 498.871 )
 
 [node name="ObstaculoMovel8" parent="." instance=ExtResource( 1 )]
 
@@ -81,6 +112,10 @@ transform/pos = Vector2( 2417.36, 922.892 )
 transform/rot = 120.0
 transform/scale = Vector2( 0.68, 0.68 )
 speed = 0.0
+
+[node name="GarrasMoveis" parent="ObstaculoMovel8"]
+
+transform/pos = Vector2( -1.05908, 499.559 )
 
 [node name="coin" parent="." instance=ExtResource( 2 )]
 
@@ -100,3 +135,7 @@ transform/pos = Vector2( 2587.04, 108.317 )
 [editable path="ObstaculoMovel2"]
 [editable path="ObstaculoMovel3"]
 [editable path="ObstaculoMovel4"]
+[editable path="ObstaculoMovel5"]
+[editable path="ObstaculoMovel6"]
+[editable path="ObstaculoMovel7"]
+[editable path="ObstaculoMovel8"]
