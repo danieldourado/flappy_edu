@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=1]
+[gd_scene load_steps=41 format=1]
 
 [ext_resource path="res://scenes/spawner_parallax.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/bird.tscn" type="PackedScene" id=2]
@@ -18,7 +18,7 @@
 [ext_resource path="res://sprites/spark_1.png" type="Texture" id=16]
 [ext_resource path="res://sprites/spark_2.png" type="Texture" id=17]
 [ext_resource path="res://sprites/interface/button_play_normal.png" type="Texture" id=18]
-[ext_resource path="res://sprites/button_play_pressed.png" type="Texture" id=19]
+[ext_resource path="res://scripts/btn_go_back_to_select_level.tres.gd" type="Script" id=19]
 [ext_resource path="res://sprites/rect_black.png" type="Texture" id=20]
 [ext_resource path="res://sprites/interface/button_resume.png" type="Texture" id=21]
 [ext_resource path="res://sprites/interface/button_menu.png" type="Texture" id=22]
@@ -179,7 +179,7 @@ func _ready():
 	pass
 
 func _on_bird_state_changed(bird):
-	if bird.get_state() == bird.STATE_GROUNDED:
+	if bird.get_state() == bird.STATE_GROUNDED or bird.get_state() == bird.STATE_END_OF_LEVEL:
 		get_node(\"anim\").play(\"show\")
 	pass
 
@@ -524,23 +524,6 @@ func _on_pressed():
 
 "
 
-[sub_resource type="GDScript" id=18]
-
-script/source = "# script: btn_menu (built-in)
-
-extends TextureButton
-
-func _ready():
-	connect(\"pressed\", self, \"_on_pressed\")
-	pass
-
-func _on_pressed():
-	get_tree().set_pause(false)
-	stage_manager.change_stage(stage_manager.STAGE_MENU)
-	pass
-
-"
-
 [node name="world" type="Node"]
 
 [node name="spawner_parallax_nuvens" parent="." instance=ExtResource( 1 )]
@@ -613,7 +596,6 @@ script/script = SubResource( 1 )
 
 [node name="hud" type="CanvasLayer" parent="."]
 
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -621,6 +603,7 @@ scale = Vector2( 1, 1 )
 
 [node name="btn_instructions" type="TextureButton" parent="hud"]
 
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -658,6 +641,7 @@ stretch_mode = 0
 
 [node name="hbox_score" type="HBoxContainer" parent="hud"]
 
+editor/display_folded = true
 focus/ignore_mouse = true
 focus/stop_mouse = false
 size_flags/horizontal = 2
@@ -859,9 +843,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 395.0
+margin/left = 163.0
 margin/top = 1230.0
-margin/right = 992.0
+margin/right = 1486.0
 margin/bottom = 1535.0
 custom_constants/separation = 9
 alignment = 1
@@ -873,18 +857,35 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 30.0
+margin/left = 121.0
 margin/top = 0.0
-margin/right = 566.0
+margin/right = 657.0
 margin/bottom = 305.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 18 )
-textures/pressed = ExtResource( 19 )
 params/resize_mode = 0
 params/stretch_mode = 0
 script/script = SubResource( 14 )
+
+[node name="btn_return" type="TextureButton" parent="hud/cntr_gameover/hbox_buttons"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 666.0
+margin/top = 0.0
+margin/right = 1202.0
+margin/bottom = 305.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 18 )
+params/resize_mode = 0
+params/stretch_mode = 0
+script/script = ExtResource( 19 )
 
 [node name="anim" type="AnimationPlayer" parent="hud/cntr_gameover"]
 
@@ -973,7 +974,7 @@ textures/normal = ExtResource( 22 )
 params/resize_mode = 0
 params/scale = Vector2( 2, 2 )
 params/stretch_mode = 0
-script/script = SubResource( 18 )
+script/script = ExtResource( 19 )
 
 [node name="spawner_level" parent="." instance=ExtResource( 23 )]
 

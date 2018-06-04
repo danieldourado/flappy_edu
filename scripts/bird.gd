@@ -15,6 +15,7 @@ const STATE_FLYING   = 0
 const STATE_FLAPPING = 1
 const STATE_HIT      = 2
 const STATE_GROUNDED = 3
+const STATE_END_OF_LEVEL = 4
 
 signal state_changed
 
@@ -57,6 +58,8 @@ func set_state(new_state):
 		state = HitState.new(self)
 	elif new_state == STATE_GROUNDED:
 		state = GroundedState.new(self)
+	elif new_state == STATE_END_OF_LEVEL:
+		state = EndOfLevelState.new(self)
 	
 	emit_signal("state_changed", self)
 	pass
@@ -70,6 +73,8 @@ func get_state():
 		return STATE_HIT
 	elif state extends GroundedState:
 		return STATE_GROUNDED
+	elif state extends EndOfLevelState:
+		return STATE_END_OF_LEVEL
 	pass
 
 # class FlyingState ----------------------------------------------------
@@ -82,7 +87,9 @@ class FlyingState:
 		self.bird = bird
 		bird.get_node("anim").play("flying")
 		bird.get_node("anim_sprite").play("flying")
-		bird.set_linear_velocity(Vector2(bird.speed, bird.get_linear_velocity().y))
+		bird.set_linear_velocity(Vector2(bird.speed, 0))
+		bird.set_rot(deg2rad(0))
+		bird.set_angular_velocity(0)
 		
 		prev_gravity_scale = bird.gravity_force
 		bird.set_gravity_scale(0)
@@ -139,6 +146,8 @@ class FlappingState:
 			bird.set_state(bird.STATE_HIT)
 		elif other_body.is_in_group(game.GROUP_GROUNDS):
 			bird.set_state(bird.STATE_GROUNDED)
+		elif other_body.is_in_group(game.GROUP_END_OF_LEVEL):
+			bird.set_state(bird.STATE_END_OF_LEVEL)
 		pass
 	
 	func flap():
@@ -207,4 +216,28 @@ class GroundedState:
 		pass
 	
 	func exit():
+		pass
+		
+# class EndOfLevelState ----------------------------------------------------
+
+class EndOfLevelState:
+	var bird
+	var prev_gravity_scale
+	
+	func _init(bird):
+		self.bird = bird
+		bird.get_node("anim").play("flying")
+		bird.get_node("anim_sprite").play("flying")
+		bird.set_linear_velocity(Vector2(bird.speed, 0))
+		bird.set_rot(deg2rad(0))
+		bird.set_angular_velocity(0)
+		
+		prev_gravity_scale = bird.gravity_force
+		bird.set_gravity_scale(0)
+		pass
+	
+	func update(delta):
+		pass
+	
+	func input(event):
 		pass
