@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites/palavras/MEDO.png" type="Texture" id=5]
 
 [node name="Fase30" type="Node2D"]
 
@@ -48,6 +49,20 @@ transform/scale = Vector2( 0.5, 0.5 )
 
 transform/pos = Vector2( 2011.97, 673.433 )
 transform/scale = Vector2( 0.5, 0.5 )
+
+[node name="MEDO" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2007.51, 134.874 )
+transform/rot = 90.0
+transform/scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 5 )
+
+[node name="MEDO1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2009.79, 823.312 )
+transform/rot = 90.0
+transform/scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 5 )
 
 
 [editable path="ObstaculoMovel1"]
