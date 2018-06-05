@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scenes/obstaculo_garra.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=3]
 
 [node name="Fase40" type="Node2D"]
 
@@ -78,5 +79,9 @@ transform/pos = Vector2( 2153.92, 788.409 )
 [node name="coin2" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 2833.27, 61.346 )
+
+[node name="fim_de_fase" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 3051.39, 0 )
 
 

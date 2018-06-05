@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://sprites/interface/button_play_normal.png" type="Texture" id=1]
-[ext_resource path="res://sprites/interface/button_play_pressed.png" type="Texture" id=2]
-[ext_resource path="res://scripts/btn_choose_level.gd" type="Script" id=3]
+[ext_resource path="res://sprites/interface/fases/locked.png" type="Texture" id=1]
+[ext_resource path="res://scripts/btn_choose_level.gd" type="Script" id=2]
+[ext_resource path="res://sprites/interface/fases/BOX_FASE.png" type="Texture" id=3]
+[ext_resource path="res://sprites/interface/fases/PLAY.png" type="Texture" id=4]
 
 [node name="btn_play" type="TextureButton"]
 
@@ -19,23 +20,44 @@ click_on_press = true
 enabled_focus_mode = 2
 shortcut = null
 textures/normal = ExtResource( 1 )
-textures/pressed = ExtResource( 2 )
 params/resize_mode = 0
-params/scale = Vector2( 0.5, 0.5 )
 params/stretch_mode = 6
-script/script = ExtResource( 3 )
+script/script = ExtResource( 2 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="play_sprites" type="Node2D" parent="."]
 
-rect/scale = Vector2( 5, 5 )
+[node name="TextureFrame" type="TextureFrame" parent="play_sprites"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 241.0
+margin/bottom = 241.0
+texture = ExtResource( 3 )
+stretch_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="play_sprites"]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 22.0
-margin/right = 54.0
-margin/bottom = 49.0
+margin/left = -42.0
+margin/top = -11.0
+margin/right = -140.0
+margin/bottom = -66.0
 alignment = 1
+
+[node name="Sprite" type="Sprite" parent="play_sprites"]
+
+transform/pos = Vector2( 123.154, 193.391 )
+texture = ExtResource( 4 )
 
 

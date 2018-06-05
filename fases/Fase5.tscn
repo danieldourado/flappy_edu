@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites/teste/MAQUINA_IDLE_001.png" type="Texture" id=5]
+[ext_resource path="res://sprites/teste/1_Pirataria.png" type="Texture" id=6]
 
 [node name="Fase5" type="Node2D"]
 
@@ -23,7 +26,7 @@ transform/scale = Vector2( 0.63, 0.63 )
 
 [node name="Obstaculo Muro3" parent="resize_fase5" instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 1442.72, 993.351 )
+transform/pos = Vector2( 1522.09, 993.351 )
 
 [node name="coin" parent="." instance=ExtResource( 3 )]
 
@@ -36,5 +39,27 @@ transform/pos = Vector2( 2658.86, 882.677 )
 [node name="coin2" parent="." instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 2490.73, 62.4588 )
+
+[node name="fim_de_fase" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 2945.59, 0 )
+
+[node name="MAQUINA_IDLE_001" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2961.98, 840.436 )
+texture = ExtResource( 5 )
+
+[node name="1_Pirataria" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2969.27, 940.452 )
+transform/scale = Vector2( 0.499437, 0.499437 )
+texture = ExtResource( 6 )
+
+[node name="1_Pirataria1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2131.24, 514.139 )
+transform/rot = 29.8206
+transform/scale = Vector2( 0.499437, 0.499437 )
+texture = ExtResource( 6 )
 
 
