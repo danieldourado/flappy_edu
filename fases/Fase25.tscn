@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=5 format=1]
 
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
 
 [node name="Fase25" type="Node2D"]
 
@@ -98,6 +99,10 @@ transform/pos = Vector2( 3136.42, 762.797 )
 
 transform/pos = Vector2( 2472.64, 138.961 )
 transform/scale = Vector2( 0.5, 0.5 )
+
+[node name="fim_de_fase" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 3353.36, 0 )
 
 
 [editable path="ObstaculoMovel"]

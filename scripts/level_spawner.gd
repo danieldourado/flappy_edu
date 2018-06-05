@@ -5,7 +5,7 @@ var new_level = null
 
 func _ready():
 	set_process(true)
-	var level = load("res://fases/fase"+str(stage_manager.current_level)+".tscn")
+	var level = load("res://fases/Fase"+str(stage_manager.current_level)+".tscn")
 	new_level = level.instance()
 	bird = utils.get_main_node().get_node("bird")
 

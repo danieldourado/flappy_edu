@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
-
+[ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=5]
 
 [node name="Fase13" type="Node2D"]
 
@@ -72,6 +72,10 @@ transform/pos = Vector2( 2418.42, 378.15 )
 transform/pos = Vector2( 1154.86, -128.318 )
 transform/rot = 25.3
 transform/scale = Vector2( 0.6, 0.6 )
+
+[node name="fim_de_fase" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 2835.73, 0 )
 
 
 [editable path="ObstaculoMovel"]
