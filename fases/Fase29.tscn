@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/palavras/DITADURA.png" type="Texture" id=6]
 
 [node name="Fase29" type="Node2D"]
 
@@ -157,6 +158,13 @@ transform/pos = Vector2( 3358.57, 0 )
 
 transform/pos = Vector2( 2367.26, 526.784 )
 transform/scale = Vector2( 0.45, 0.45 )
+
+[node name="DITADURA" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2367.34, 705.496 )
+transform/rot = 90.0
+transform/scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 6 )
 
 
 [editable path="ObstaculoMovel"]

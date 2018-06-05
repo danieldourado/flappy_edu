@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/teste/1_Pirataria.png" type="Texture" id=5]
+[ext_resource path="res://sprites/palavras/IMPUNIDADE.png" type="Texture" id=5]
 
 [node name="Fase6" type="Node2D"]
 
@@ -41,11 +41,11 @@ transform/pos = Vector2( 2167.89, -47.947 )
 
 transform/pos = Vector2( 2516.17, 0 )
 
-[node name="1_Pirataria" type="Sprite" parent="."]
+[node name="IMPUNIDADE" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2165.39, 225.265 )
+transform/pos = Vector2( 2167.1, 225.493 )
 transform/rot = 90.0
-transform/scale = Vector2( 0.539216, 0.539216 )
+transform/scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 5 )
 
 

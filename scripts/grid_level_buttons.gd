@@ -1,7 +1,7 @@
 extends GridContainer
 
 export var amount_of_levels 	= 10
-const btn_choose_level		    = preload("res://scenes/btn_choose_level.tscn")
+const btn_choose_level = preload("res://scenes/btn_choose_level.tscn")
 
 func _ready():
 	self.create_buttons(self.amount_of_levels, self)
