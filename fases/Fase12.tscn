@@ -5,121 +5,98 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/palavras/DESIGUALDADE.png" type="Texture" id=6]
+[ext_resource path="res://sprites/palavras/DITADURA.png" type="Texture" id=6]
 
-[node name="Fase12" type="Node2D"]
+[node name="Fase21" type="Node2D"]
 
-[node name="resize_fase12" type="Node2D" parent="."]
+[node name="resize_fase21" type="Node2D" parent="."]
 
-transform/pos = Vector2( 704.071, 0 )
+transform/pos = Vector2( 790.489, 2 )
 transform/scale = Vector2( 0.63, 0.63 )
 
-[node name="Obstaculo Muro 1" parent="resize_fase12" instance=ExtResource( 1 )]
+[node name="Obstaculo Muro 1" parent="resize_fase21" instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 880.17, -188.363 )
-transform/rot = 37.9473
+transform/pos = Vector2( 1179.89, 432.419 )
+transform/rot = 90.0
+
+[node name="Obstaculo Muro2" parent="resize_fase21" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1359.91, -448.491 )
+
+[node name="Obstaculo Muro5" parent="resize_fase21" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 2874.81, -448.82 )
+
+[node name="Obstaculo Muro3" parent="resize_fase21" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 1356.11, 733.726 )
+
+[node name="Obstaculo Muro8" parent="resize_fase21" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 3462.21, 871.582 )
+
+[node name="Obstaculo Muro7" parent="resize_fase21" instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 2695.02, 431.898 )
+transform/rot = 90.0
 
 [node name="ObstaculoMovel" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1632.97, 403.511 )
-transform/rot = -0.0204291
+transform/pos = Vector2( 2302.39, 143.409 )
 transform/scale = Vector2( 0.63, 0.63 )
-speed = 1.7
+speed = 0.0
 
 [node name="GarrasMoveis" parent="ObstaculoMovel"]
 
-editor/display_folded = true
-transform/pos = Vector2( 10.2495, 363.311 )
-
-[node name="Position1" parent="ObstaculoMovel"]
-
-transform/pos = Vector2( 0.142822, 52.491 )
+transform/pos = Vector2( -11.6357, 470.035 )
 
 [node name="Position2" parent="ObstaculoMovel"]
 
-transform/pos = Vector2( 0.0400391, 692.731 )
+transform/pos = Vector2( -11.6357, 472.405 )
 
 [node name="ObstaculoMovel1" parent="." instance=ExtResource( 2 )]
 
 editor/display_folded = true
-transform/pos = Vector2( 1926.41, 543.755 )
-transform/rot = -0.0204291
+transform/pos = Vector2( 2706.69, 405.259 )
 transform/scale = Vector2( 0.63, 0.63 )
-speed = 1.7
-delay_to_start = 0.6
+speed = 0.0
 
-[node name="Position1" parent="ObstaculoMovel1"]
+[node name="GarrasMoveis" parent="ObstaculoMovel1"]
 
-transform/pos = Vector2( 0.118408, -167.796 )
+editor/display_folded = true
 
 [node name="Position2" parent="ObstaculoMovel1"]
 
-transform/pos = Vector2( -0.0100098, 472.59 )
-
-[node name="ObstaculoMovel2" parent="." instance=ExtResource( 2 )]
-
-editor/display_folded = true
-transform/pos = Vector2( 2193.95, 537.282 )
-transform/rot = -0.0204291
-transform/scale = Vector2( 0.63, 0.63 )
-speed = 1.7
-delay_to_start = 0.9
-
-[node name="Position1" parent="ObstaculoMovel2"]
-
-transform/pos = Vector2( 0.124268, -150.672 )
-
-[node name="Position2" parent="ObstaculoMovel2"]
-
-transform/pos = Vector2( -0.00268551, 493.139 )
-
-[node name="ObstaculoMovel3" parent="." instance=ExtResource( 2 )]
-
-editor/display_folded = true
-transform/pos = Vector2( 2459.34, 535.125 )
-transform/rot = -0.0204291
-transform/scale = Vector2( 0.63, 0.63 )
-speed = 1.7
-delay_to_start = 0.6
-
-[node name="Position1" parent="ObstaculoMovel3"]
-
-transform/pos = Vector2( 0.123047, -154.096 )
-
-[node name="Position2" parent="ObstaculoMovel3"]
-
-transform/pos = Vector2( -0.000244111, 499.989 )
+transform/pos = Vector2( 0, 0.333191 )
 
 [node name="coin" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 1811.23, 855.305 )
+transform/pos = Vector2( 2294.31, 90.1986 )
 
 [node name="coin1" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2190.36, 375.962 )
+transform/pos = Vector2( 2709.7, 830.352 )
 
 [node name="coin2" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2454.25, 856.975 )
+transform/pos = Vector2( 1458.49, 92.7161 )
 
 [node name="obstaculo_raio" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1762.27, 281.964 )
+transform/pos = Vector2( 1784.31, 599.337 )
 transform/rot = 90.0
 
 [node name="fim_de_fase" parent="." instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 2693.76, 0 )
+transform/pos = Vector2( 3166.17, 0 )
 
-[node name="DESIGUALDADE" type="Sprite" parent="."]
+[node name="DITADURA" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2040.89, 282.244 )
-transform/scale = Vector2( 0.6, 0.6 )
+transform/pos = Vector2( 2062, 598.607 )
+transform/scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 6 )
 
 
 [editable path="ObstaculoMovel"]
 [editable path="ObstaculoMovel1"]
-[editable path="ObstaculoMovel2"]
-[editable path="ObstaculoMovel3"]

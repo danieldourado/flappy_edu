@@ -592,10 +592,13 @@ script/script = SubResource( 1 )
 
 [node name="spawner_ground" parent="." instance=ExtResource( 5 )]
 
+z/z = 2
+
 [node name="background" parent="." instance=ExtResource( 6 )]
 
 [node name="hud" type="CanvasLayer" parent="."]
 
+editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -927,6 +930,7 @@ autoplay = ""
 [node name="cntr_pause" type="Container" parent="hud"]
 
 process/pause_mode = 2
+editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2

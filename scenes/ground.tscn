@@ -11,6 +11,7 @@ extents = Vector2( 84, 28 )
 [node name="ground" type="StaticBody2D"]
 
 transform/pos = Vector2( 0, 256 )
+z/z = 2
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 5.87807, 0, 0, 10.0167, 353.68, 983.74 )
