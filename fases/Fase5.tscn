@@ -1,60 +1,55 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/obstaculo_muro2.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/palavras/PIRATARIA.png" type="Texture" id=5]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sprites/palavras/SUBORNO.png" type="Texture" id=4]
 
-[node name="Fase5" type="Node2D"]
+[node name="Fase3" type="Node2D"]
 
-[node name="obstaculo_raio" parent="." instance=ExtResource( 1 )]
+[node name="resize_fase3" type="Node2D" parent="."]
 
-transform/pos = Vector2( 2262.29, 53.0007 )
-transform/rot = -59.2165
-
-[node name="obstaculo_raio1" parent="." instance=ExtResource( 1 )]
-
-transform/pos = Vector2( 2360.38, 378.709 )
-transform/rot = -59.2165
-
-[node name="resize_fase5" type="Node2D" parent="."]
-
-transform/pos = Vector2( 784.275, 0 )
+transform/pos = Vector2( 1123.25, 0 )
 transform/scale = Vector2( 0.63, 0.63 )
 
-[node name="Obstaculo Muro3" parent="resize_fase5" instance=ExtResource( 2 )]
+[node name="coin" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1522.09, 993.351 )
+transform/pos = Vector2( 2144.73, 367.785 )
 
-[node name="coin" parent="." instance=ExtResource( 3 )]
+[node name="coin1" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 1505.54, 74.1808 )
+transform/pos = Vector2( 1932.18, 889.366 )
 
-[node name="coin1" parent="." instance=ExtResource( 3 )]
+[node name="coin2" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 2658.86, 882.677 )
+transform/pos = Vector2( 2344.61, 889.366 )
 
-[node name="coin2" parent="." instance=ExtResource( 3 )]
+[node name="obstaculo_raio" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 2490.73, 62.4588 )
+transform/pos = Vector2( 1946.51, 95.473 )
+transform/scale = Vector2( 0.55, 0.55 )
 
-[node name="fim_de_fase" parent="." instance=ExtResource( 4 )]
+[node name="obstaculo_raio1" parent="." instance=ExtResource( 2 )]
 
-transform/pos = Vector2( 2945.59, 0 )
+transform/pos = Vector2( 2326.69, 95.473 )
+transform/scale = Vector2( 0.55, 0.55 )
 
-[node name="PIRATARIA" type="Sprite" parent="."]
+[node name="fim_de_fase" parent="." instance=ExtResource( 3 )]
 
-transform/pos = Vector2( 2120.71, 521.352 )
-transform/rot = 30.3161
+transform/pos = Vector2( 2831.35, 0 )
+
+[node name="SUBORNO" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1946.06, 312.361 )
+transform/rot = 90.0
 transform/scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 
-[node name="PIRATARIA1" type="Sprite" parent="."]
+[node name="SUBORNO1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2026.85, 192.143 )
-transform/rot = 30.3161
+transform/pos = Vector2( 2326.24, 312.361 )
+transform/rot = 90.0
 transform/scale = Vector2( 0.7, 0.7 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 
 

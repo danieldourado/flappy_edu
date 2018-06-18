@@ -14,8 +14,8 @@ signal stage_changed
 func _ready():
 	pass
 
-var current_level = 0
-func change_stage(stage_path, level = 0, is_splash_screen=false):
+var current_level = 1
+func change_stage(stage_path, level = 1, is_splash_screen=false):
 	if is_changing: return
 	
 	is_changing = true
@@ -51,11 +51,10 @@ func change_stage(stage_path, level = 0, is_splash_screen=false):
 	decide_if_show_pop_up(stage_path, game.level_current, BEGGINING)
 	pass
 	
-func decide_if_show_pop_up(stage_path, level=0, period=BEGGINING):
+func decide_if_show_pop_up(stage_path, level=1, period=BEGGINING):
 	for pop_up in pop_ups:
 		if pop_up['scene'] == stage_path && pop_up['level'] == level && pop_up['period'] == period:
 			show_pop_up(pop_up)
-			return
 
 func show_pop_up(pop_up):
 	var new_pop_up = pop_up_scene.instance()
@@ -66,12 +65,14 @@ var BEGGINING="beggining"
 var END="end"
 
 var pop_ups = [
-	{'scene':STAGE_SELECT_LEVEL,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/fases/world_backgroung_01.png")},
-	{'scene':STAGE_GAME,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/fases/world_backgroung_02.png")},
-	{'scene':STAGE_GAME,'level':10,'period':END,'texture':preload("res://sprites/interface/fases/world_backgroung_01.png")},
-	{'scene':STAGE_GAME,'level':11,'period':BEGGINING,'texture':preload("res://sprites/interface/fases/world_backgroung_01.png")},
-	{'scene':STAGE_GAME,'level':20,'period':BEGGINING,'texture':preload("res://sprites/interface/fases/world_backgroung_01.png")},
-	{'scene':STAGE_GAME,'level':21,'period':BEGGINING,'texture':preload("res://sprites/interface/fases/world_backgroung_01.png")},
-	{'scene':STAGE_GAME,'level':30,'period':END,'texture':preload("res://sprites/interface/fases/world_backgroung_01.png")},
-	{'scene':STAGE_SELECT_LEVEL,'level':31,'period':BEGGINING,'texture':preload("res://sprites/interface/fases/world_backgroung_01.png")},
+	{'scene':STAGE_SELECT_LEVEL,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_02.png")},
+	{'scene':STAGE_SELECT_LEVEL,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_01.png")},
+	{'scene':STAGE_GAME,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_03.png")},
+	{'scene':STAGE_GAME,'level':10,'period':END,'texture':preload("res://sprites/interface/popups/POP UP_04.png")},
+	{'scene':STAGE_GAME,'level':11,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_05.png")},
+	{'scene':STAGE_GAME,'level':20,'period':END,'texture':preload("res://sprites/interface/popups/POP UP_06.png")},
+	{'scene':STAGE_GAME,'level':21,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_07.png")},
+	{'scene':STAGE_GAME,'level':30,'period':END,'texture':preload("res://sprites/interface/popups/POP UP_08.png")},
+	{'scene':STAGE_SELECT_LEVEL,'level':31,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_10.png")},
+	{'scene':STAGE_SELECT_LEVEL,'level':31,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_09.png")},
 ]

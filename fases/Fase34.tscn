@@ -37,7 +37,7 @@ transform/rot = 90.0
 [node name="Obstaculo Rotatorio" parent="resize_fase34" instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 2319.65, 736.329 )
-transform/rot = 142.312
+transform/rot = 108.024
 transform/scale = Vector2( 0.3, 0.3 )
 rotation_velocity = -3.5
 
