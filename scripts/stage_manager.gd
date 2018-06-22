@@ -48,11 +48,12 @@ func change_stage(stage_path, level = 1, is_splash_screen=false):
 
 	is_changing = false
 	get_tree().get_root().set_disable_input(false)
-	decide_if_show_pop_up(stage_path, game.level_current, BEGGINING)
+	decide_if_show_pop_up(stage_path, current_level, BEGGINING)
 	pass
 	
 func decide_if_show_pop_up(stage_path, level=1, period=BEGGINING):
 	for pop_up in pop_ups:
+		if level < game.level_current: continue
 		if pop_up['scene'] == stage_path && pop_up['level'] == level && pop_up['period'] == period:
 			show_pop_up(pop_up)
 

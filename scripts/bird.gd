@@ -234,7 +234,7 @@ class EndOfLevelState:
 		bird.set_angular_velocity(0)
 		prev_gravity_scale = bird.gravity_force
 		bird.set_gravity_scale(0)
-		stage_manager.decide_if_show_pop_up(stage_manager.STAGE_GAME, game.level_current, stage_manager.END)
+		stage_manager.decide_if_show_pop_up(stage_manager.STAGE_GAME, stage_manager.current_level, stage_manager.END)
 		if game.level_current <=stage_manager.current_level:
 			game.level_current = stage_manager.current_level+1
 		pass
