@@ -25,7 +25,7 @@ func set_number(number):
 	level = number
 	for child in get_node('play_sprites').get_node('HBoxContainer').get_children():
 		child.queue_free()
-	
+
 	for digit in utils.get_digits(number):
 		var texture_frame = TextureFrame.new()
 		texture_frame.set_texture(sprite_numbers[digit])

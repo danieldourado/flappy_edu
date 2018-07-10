@@ -315,6 +315,7 @@ const spr_medal_platinum = preload(\"res://sprites/interface/medal_platinum.png\
 signal shown
 
 func _ready():
+	
 	hide()
 	
 	var hbox_score_last = utils.get_main_node().find_node(\"hbox_score_last\")
@@ -323,6 +324,8 @@ func _ready():
 	pass
 
 func show_medal():
+	var bird = utils.get_main_node().get_node(\"bird\")
+	if bird.get_state() != bird.STATE_END_OF_LEVEL: return
 	var texture = null
 	
 	if game.score_current >= game.MEDAL_BRONZE  : texture = spr_medal_bronze
@@ -598,7 +601,6 @@ z/z = 2
 
 [node name="hud" type="CanvasLayer" parent="."]
 
-editor/display_folded = true
 layer = 1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -649,6 +651,7 @@ texture = ExtResource( 8 )
 
 [node name="hbox_score" type="HBoxContainer" parent="hud"]
 
+editor/display_folded = true
 rect/scale = Vector2( 0.7, 0.7 )
 focus/ignore_mouse = true
 focus/stop_mouse = false
@@ -746,7 +749,6 @@ stretch_mode = 0
 
 [node name="tex_panelscore" type="TextureFrame" parent="hud/cntr_gameover"]
 
-editor/display_folded = true
 rect/scale = Vector2( 0.4, 0.4 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -867,6 +869,7 @@ autoplay = ""
 
 [node name="hbox_buttons" type="HBoxContainer" parent="hud/cntr_gameover"]
 
+editor/display_folded = true
 rect/scale = Vector2( 0.6, 0.6 )
 focus/ignore_mouse = false
 focus/stop_mouse = false

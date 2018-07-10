@@ -49,9 +49,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = -42.0
+margin/left = 22.0
 margin/top = -11.0
-margin/right = -140.0
+margin/right = -199.0
 margin/bottom = -66.0
 alignment = 1
 

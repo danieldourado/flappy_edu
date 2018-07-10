@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/palavras/RACISMO.png" type="Texture" id=6]
+[ext_resource path="res://sprites/palavras/DITADURA.png" type="Texture" id=6]
 
 [node name="Fase17" type="Node2D"]
 
@@ -70,18 +70,18 @@ transform/pos = Vector2( 2213.91, 550.86 )
 
 transform/pos = Vector2( 2530.08, 0 )
 
-[node name="RACISMO" type="Sprite" parent="."]
+[node name="DITADURA" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1231.14, 140.726 )
+transform/pos = Vector2( 2213.81, 727.406 )
 transform/rot = 90.0
-transform/scale = Vector2( 0.5, 0.5 )
+transform/scale = Vector2( 0.55, 0.55 )
 texture = ExtResource( 6 )
 
-[node name="RACISMO1" type="Sprite" parent="."]
+[node name="DITADURA1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2212.13, 727.896 )
+transform/pos = Vector2( 1232.74, 149.524 )
 transform/rot = 90.0
-transform/scale = Vector2( 0.5, 0.5 )
+transform/scale = Vector2( 0.55, 0.55 )
 texture = ExtResource( 6 )
 
 
