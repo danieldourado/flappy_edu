@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/palavras/DESIGUALDADE.png" type="Texture" id=5]
+[ext_resource path="res://sprites/palavras/IMPUNIDADE.png" type="Texture" id=5]
 
 [node name="Fase28" type="Node2D"]
 
@@ -86,11 +86,11 @@ transform/pos = Vector2( 2683.32, 0 )
 transform/pos = Vector2( 1995.07, -77.562 )
 transform/scale = Vector2( 0.6, 0.6 )
 
-[node name="DESIGUALDADE" type="Sprite" parent="."]
+[node name="IMPUNIDADE" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1995.11, 188.29 )
+transform/pos = Vector2( 1994.23, 191.79 )
 transform/rot = 90.0
-transform/scale = Vector2( 0.45, 0.45 )
+transform/scale = Vector2( 0.55, 0.55 )
 texture = ExtResource( 5 )
 
 

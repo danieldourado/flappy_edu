@@ -3,7 +3,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=3]
-[ext_resource path="res://sprites/palavras/INJUSTICA.png" type="Texture" id=4]
+[ext_resource path="res://sprites/palavras/DISCRIMINACAO.png" type="Texture" id=4]
 
 [node name="Fase10" type="Node2D"]
 
@@ -35,9 +35,14 @@ editor/display_folded = true
 transform/pos = Vector2( 1648.1, 585.093 )
 transform/scale = Vector2( 0.5, 0.5 )
 
+[node name="AnimatedSprite1" parent="obstaculo_raio1"]
+
+frame = 3
+
 [node name="AnimatedSprite3" parent="obstaculo_raio1"]
 
 z/z = -1
+frame = 3
 
 [node name="obstaculo_raio2" parent="." instance=ExtResource( 2 )]
 
@@ -47,34 +52,26 @@ transform/scale = Vector2( 0.5, 0.5 )
 
 [node name="AnimatedSprite1" parent="obstaculo_raio2"]
 
-frame = 0
+frame = 2
 
 [node name="AnimatedSprite3" parent="obstaculo_raio2"]
 
 z/z = -1
-frame = 0
+frame = 2
 
 [node name="obstaculo_raio3" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 2286.55, 587.365 )
 transform/scale = Vector2( 0.5, 0.5 )
 
-[node name="AnimatedSprite" parent="obstaculo_raio3"]
-
-frame = 1
-
-[node name="AnimatedSprite2" parent="obstaculo_raio3"]
-
-frame = 1
-
 [node name="AnimatedSprite1" parent="obstaculo_raio3"]
 
-frame = 1
+frame = 3
 
 [node name="AnimatedSprite3" parent="obstaculo_raio3"]
 
 z/z = -1
-frame = 1
+frame = 3
 
 [node name="obstaculo_raio4" parent="." instance=ExtResource( 2 )]
 
@@ -90,11 +87,11 @@ transform/scale = Vector2( 0.5, 0.5 )
 
 transform/pos = Vector2( 2698.07, 0 )
 
-[node name="INJUSTICA" type="Sprite" parent="."]
+[node name="DISCRIMINACAO" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1970.02, 156.201 )
+transform/pos = Vector2( 1967.18, 163.283 )
 transform/rot = 90.0
-transform/scale = Vector2( 0.55, 0.55 )
+transform/scale = Vector2( 0.37, 0.37 )
 texture = ExtResource( 4 )
 
 

@@ -7,7 +7,7 @@
 [ext_resource path="res://scenes/obstaculo_garra.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=7]
-[ext_resource path="res://sprites/palavras/AGRESSAO.png" type="Texture" id=8]
+[ext_resource path="res://sprites/palavras/CENSURA.png" type="Texture" id=8]
 
 [node name="Fase19" type="Node2D"]
 
@@ -87,10 +87,10 @@ transform/scale = Vector2( 0.5, 0.5 )
 
 transform/pos = Vector2( 3507.18, 0 )
 
-[node name="AGRESSAO" type="Sprite" parent="."]
+[node name="CENSURA" type="Sprite" parent="."]
 
-transform/pos = Vector2( 3146.75, 560.282 )
-transform/scale = Vector2( 0.5, 0.5 )
+transform/pos = Vector2( 3152.97, 563.527 )
+transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 8 )
 
 

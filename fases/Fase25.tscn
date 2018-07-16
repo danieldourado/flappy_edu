@@ -6,9 +6,11 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=6]
-[ext_resource path="res://sprites/palavras/PRECONCEITO.png" type="Texture" id=7]
+[ext_resource path="res://sprites/palavras/VIOLENCIA.png" type="Texture" id=7]
 
 [node name="Fase15" type="Node2D"]
+
+transform/pos = Vector2( 18.4163, -103.13 )
 
 [node name="resize_fase15" type="Node2D" parent="."]
 
@@ -73,10 +75,10 @@ transform/scale = Vector2( 0.5, 0.5 )
 
 transform/pos = Vector2( 3123.73, 0 )
 
-[node name="PRECONCEITO" type="Sprite" parent="."]
+[node name="VIOLENCIA" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2680.97, 454.746 )
-transform/scale = Vector2( 0.45, 0.45 )
+transform/pos = Vector2( 2685.44, 450.142 )
+transform/scale = Vector2( 0.58, 0.58 )
 texture = ExtResource( 7 )
 
 

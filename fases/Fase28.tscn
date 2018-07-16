@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/palavras/BULLYING.png" type="Texture" id=5]
+[ext_resource path="res://sprites/palavras/OPRESSAO.png" type="Texture" id=5]
 
 [node name="Fase18" type="Node2D"]
 
@@ -73,11 +73,11 @@ transform/pos = Vector2( 2592.26, 297.112 )
 
 transform/pos = Vector2( 3880.93, 0 )
 
-[node name="BULLYING1" type="Sprite" parent="."]
+[node name="OPRESSAO" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2592.34, 580.682 )
+transform/pos = Vector2( 2591.72, 579.159 )
 transform/rot = 90.0
-transform/scale = Vector2( 0.7, 0.7 )
+transform/scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 5 )
 
 
