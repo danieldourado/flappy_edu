@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/obstaculo_movel.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/palavras/DITADURA.png" type="Texture" id=6]
+[ext_resource path="res://sprites/palavras/IGNORANCIA.png" type="Texture" id=6]
 
 [node name="Fase29" type="Node2D"]
 
@@ -159,11 +159,11 @@ transform/pos = Vector2( 3358.57, 0 )
 transform/pos = Vector2( 2367.26, 526.784 )
 transform/scale = Vector2( 0.45, 0.45 )
 
-[node name="DITADURA" type="Sprite" parent="."]
+[node name="IGNORANCIA" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2367.34, 705.496 )
+transform/pos = Vector2( 2365.42, 709.124 )
 transform/rot = 90.0
-transform/scale = Vector2( 0.6, 0.6 )
+transform/scale = Vector2( 0.45, 0.45 )
 texture = ExtResource( 6 )
 
 

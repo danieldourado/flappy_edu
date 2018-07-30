@@ -170,10 +170,9 @@ x_offset = 100
 
 [node name="anim_sprite" type="AnimatedSprite" parent="."]
 
-transform/scale = Vector2( 0.125, 0.125 )
 frames = SubResource( 2 )
 animation = "flap"
-frame = 1
+frame = 21
 playing = true
 __meta__ = {
 "_edit_lock_": true

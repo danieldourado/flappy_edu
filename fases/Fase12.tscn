@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/palavras/DITADURA.png" type="Texture" id=6]
+[ext_resource path="res://sprites/palavras/PRECONCEITO.png" type="Texture" id=6]
 
 [node name="Fase21" type="Node2D"]
 
@@ -91,10 +91,10 @@ transform/rot = 90.0
 
 transform/pos = Vector2( 3166.17, 0 )
 
-[node name="DITADURA" type="Sprite" parent="."]
+[node name="PRECONCEITO" type="Sprite" parent="."]
 
-transform/pos = Vector2( 2062, 598.607 )
-transform/scale = Vector2( 0.7, 0.7 )
+transform/pos = Vector2( 2066.49, 599.172 )
+transform/scale = Vector2( 0.66, 0.66 )
 texture = ExtResource( 6 )
 
 

@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/obstaculo_movel2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/palavras/DESRESPEITO.png" type="Texture" id=5]
+[ext_resource path="res://sprites/palavras/DESIGUALDADE.png" type="Texture" id=5]
 
 [node name="Fase16" type="Node2D"]
 
@@ -152,10 +152,10 @@ transform/scale = Vector2( 0.5, 0.5 )
 
 transform/pos = Vector2( 3459.03, 0 )
 
-[node name="DESRESPEITO" type="Sprite" parent="."]
+[node name="DESIGUALDADE" type="Sprite" parent="."]
 
-transform/pos = Vector2( 3073.38, 463.748 )
-transform/scale = Vector2( 0.48, 0.48 )
+transform/pos = Vector2( 3077.07, 464.401 )
+transform/scale = Vector2( 0.42, 0.42 )
 texture = ExtResource( 5 )
 
 

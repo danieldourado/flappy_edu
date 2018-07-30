@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/palavras/CRISE.png" type="Texture" id=5]
+[ext_resource path="res://sprites/palavras/RACISMO.png" type="Texture" id=5]
 
 [node name="Fase7" type="Node2D"]
 
@@ -87,9 +87,9 @@ transform/rot = 90.0
 
 transform/pos = Vector2( 3822.11, 0 )
 
-[node name="CRISE" type="Sprite" parent="."]
+[node name="RACISMO" type="Sprite" parent="."]
 
-transform/pos = Vector2( 3212.91, 460.91 )
+transform/pos = Vector2( 3213.73, 460.226 )
 transform/scale = Vector2( 0.7, 0.7 )
 texture = ExtResource( 5 )
 

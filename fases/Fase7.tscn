@@ -4,7 +4,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sprites/palavras/TIRANIA.png" type="Texture" id=5]
+[ext_resource path="res://sprites/palavras/INJUSTICA.png" type="Texture" id=5]
 
 [node name="Fase26" type="Node2D"]
 
@@ -131,10 +131,10 @@ transform/pos = Vector2( 1717.69, 595.284 )
 transform/rot = 90.0
 transform/scale = Vector2( 0.5, 0.5 )
 
-[node name="TIRANIA" type="Sprite" parent="."]
+[node name="INJUSTICA" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1915.91, 594.391 )
-transform/scale = Vector2( 0.7, 0.7 )
+transform/pos = Vector2( 1921.66, 600.902 )
+transform/scale = Vector2( 0.58, 0.58 )
 texture = ExtResource( 5 )
 
 

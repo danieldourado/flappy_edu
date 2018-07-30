@@ -2,7 +2,6 @@
 
 [ext_resource path="res://sprites/obstacles/garras.png" type="Texture" id=1]
 
-
 [node name="Obstaculo_Muro 1" type="StaticBody2D"]
 
 input/pickable = false

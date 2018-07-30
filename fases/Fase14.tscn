@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/fim_de_fase.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/obstaculo_raio.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/palavras/OPRESSAO.png" type="Texture" id=6]
+[ext_resource path="res://sprites/palavras/DESRESPEITO.png" type="Texture" id=6]
 
 [node name="Fase27" type="Node2D"]
 
@@ -52,10 +52,10 @@ transform/pos = Vector2( 1172.59, 519.448 )
 transform/rot = 90.0
 transform/scale = Vector2( 0.5, 0.5 )
 
-[node name="OPRESSAO" type="Sprite" parent="."]
+[node name="DESRESPEITO" type="Sprite" parent="."]
 
-transform/pos = Vector2( 1371.97, 514.163 )
-transform/scale = Vector2( 0.6, 0.6 )
+transform/pos = Vector2( 1373.84, 519.833 )
+transform/scale = Vector2( 0.45, 0.45 )
 texture = ExtResource( 6 )
 
 

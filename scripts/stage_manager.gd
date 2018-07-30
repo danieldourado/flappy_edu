@@ -5,7 +5,8 @@ extends CanvasLayer
 const STAGE_GAME = "res://stages/game_stage.tscn"
 const STAGE_MENU = "res://stages/menu_stage.tscn"
 const STAGE_SELECT_LEVEL = "res://stages/select_level_stage.tscn"
-const pop_up_scene = preload("res://scenes/pop_up.tscn")
+const popup_scene = preload("res://scenes/pop_up.tscn")
+const hq_scene = preload("res://scenes/hq.tscn")
 
 var is_changing = false
 
@@ -58,7 +59,11 @@ func decide_if_show_pop_up(stage_path, level=1, period=BEGGINING):
 			show_pop_up(pop_up)
 
 func show_pop_up(pop_up):
-	var new_pop_up = pop_up_scene.instance()
+	var new_pop_up = null
+	if pop_up['class'] == 'hq':
+		new_pop_up = hq_scene.instance()
+	else:
+		new_pop_up = popup_scene.instance()
 	new_pop_up.set_popup(pop_up['texture'])
 	add_child(new_pop_up)
 	
@@ -66,14 +71,17 @@ var BEGGINING="beggining"
 var END="end"
 
 var pop_ups = [
-	{'scene':STAGE_SELECT_LEVEL,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_02.png")},
-	{'scene':STAGE_SELECT_LEVEL,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_01.png")},
-	{'scene':STAGE_GAME,'level':1,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_03.png")},
-	{'scene':STAGE_GAME,'level':10,'period':END,'texture':preload("res://sprites/interface/popups/POP UP_04.png")},
-	{'scene':STAGE_GAME,'level':11,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_05.png")},
-	{'scene':STAGE_GAME,'level':20,'period':END,'texture':preload("res://sprites/interface/popups/POP UP_06.png")},
-	{'scene':STAGE_GAME,'level':21,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_07.png")},
-	{'scene':STAGE_GAME,'level':30,'period':END,'texture':preload("res://sprites/interface/popups/POP UP_08.png")},
-	{'scene':STAGE_SELECT_LEVEL,'level':31,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_10.png")},
-	{'scene':STAGE_SELECT_LEVEL,'level':31,'period':BEGGINING,'texture':preload("res://sprites/interface/popups/POP UP_09.png")},
+	{'scene':STAGE_SELECT_LEVEL,'level':1,'period':BEGGINING,'texture':[
+	"res://sprites/interface/popups/hq01.jpg",
+	"res://sprites/interface/popups/hq02.jpg",
+	"res://sprites/interface/popups/hq03.jpg"],'class':'hq'},
+	#{'scene':STAGE_SELECT_LEVEL,'level':1,'period':BEGGINING,'texture':[]},
+	{'scene':STAGE_GAME,'level':1,'period':BEGGINING,'texture':["res://sprites/interface/popups/popup03.jpg"],'class':'popup'},
+	{'scene':STAGE_GAME,'level':10,'period':END,'texture':["res://sprites/interface/popups/popup04.jpg"],'class':'popup'},
+	{'scene':STAGE_GAME,'level':11,'period':BEGGINING,'texture':["res://sprites/interface/popups/popup05.jpg"],'class':'popup'},
+	{'scene':STAGE_GAME,'level':20,'period':END,'texture':["res://sprites/interface/popups/popup06.jpg"],'class':'popup'},
+	{'scene':STAGE_GAME,'level':21,'period':BEGGINING,'texture':["res://sprites/interface/popups/popup07.jpg"],'class':'popup'},
+	{'scene':STAGE_GAME,'level':30,'period':END,'texture':["res://sprites/interface/popups/popup08.jpg"],'class':'popup'},
+	{'scene':STAGE_SELECT_LEVEL,'level':31,'period':BEGGINING,'texture':["res://sprites/interface/popups/popup10.jpg"],'class':'popup'},
+	{'scene':STAGE_SELECT_LEVEL,'level':31,'period':BEGGINING,'texture':["res://sprites/interface/popups/popup09.jpg"],'class':'popup'},
 ]
