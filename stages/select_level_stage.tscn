@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://sprites/interface/fases/world_backgroung_01.png" type="Texture" id=1]
+[ext_resource path="res://sprites/interface/fases/bg01.jpg" type="Texture" id=1]
 [ext_resource path="res://scripts/level_background.gd" type="Script" id=2]
 [ext_resource path="res://scripts/grid_level_buttons.gd" type="Script" id=3]
 [ext_resource path="res://sounds/sfx_menu_music.ogg" type="AudioStream" id=4]
