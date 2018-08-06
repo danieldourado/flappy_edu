@@ -155,7 +155,8 @@ class FlappingState:
 		bird.set_angular_velocity(-3)
 		bird.get_node("anim").play("flap")
 		
-		audio_player.play("sfx_wing")
+		var wing = audio_player.play("sfx_wing")
+		audio_player.set_volume(wing, 0.18)
 		pass
 	
 	func exit():

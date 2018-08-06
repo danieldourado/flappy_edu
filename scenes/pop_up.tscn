@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scripts/popup.gd" type="Script" id=1]
 [ext_resource path="res://sprites/rect_black.png" type="Texture" id=2]
-[ext_resource path="res://sprites/interface/popups/POP UP_01.png" type="Texture" id=3]
+[ext_resource path="res://sprites/interface/popups/popup03.jpg" type="Texture" id=3]
 [ext_resource path="res://sprites/interface/button_x.png" type="Texture" id=4]
 
 [node name="pop_up" type="Node2D"]
@@ -50,10 +50,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 1713.0
-margin/top = 42.0
-margin/right = 1876.0
-margin/bottom = 205.0
+margin/left = 1743.0
+margin/top = 12.0
+margin/right = 1906.0
+margin/bottom = 175.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null

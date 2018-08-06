@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://scripts/coin.gd" type="Script" id=1]
 [ext_resource path="res://sprites/moeda/Moeda_01.png" type="Texture" id=2]
@@ -7,13 +7,7 @@
 [ext_resource path="res://sprites/moeda/Moeda_04.png" type="Texture" id=5]
 [ext_resource path="res://sprites/moeda/Moeda_05.png" type="Texture" id=6]
 [ext_resource path="res://sprites/moeda/Moeda_06.png" type="Texture" id=7]
-[ext_resource path="res://sprites/moeda/Moeda_07.png" type="Texture" id=8]
-[ext_resource path="res://sprites/moeda/Moeda_08.png" type="Texture" id=9]
-[ext_resource path="res://sprites/moeda/Moeda_09.png" type="Texture" id=10]
-[ext_resource path="res://sprites/moeda/Moeda_10.png" type="Texture" id=11]
-[ext_resource path="res://sprites/moeda/Moeda_11.png" type="Texture" id=12]
-[ext_resource path="res://sprites/moeda/Moeda_12.png" type="Texture" id=13]
-[ext_resource path="res://sprites/moeda/new_animation.tres" type="Animation" id=14]
+[ext_resource path="res://sprites/moeda/new_animation.tres" type="Animation" id=8]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -23,7 +17,7 @@ radius = 10.0
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "default",
 "speed": 12.0
@@ -52,10 +46,9 @@ _update_shape_index = 0
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 
 transform/pos = Vector2( 0, -0.0503082 )
-transform/scale = Vector2( 0.200613, 0.200613 )
 frames = SubResource( 2 )
 animation = "default"
-frame = 8
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -63,7 +56,7 @@ playing = true
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-"anims/New Anim" = ExtResource( 14 )
+"anims/New Anim" = ExtResource( 8 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]

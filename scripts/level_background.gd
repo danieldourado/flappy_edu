@@ -1,10 +1,10 @@
 extends Sprite
 
 const background_numbers = [
-	preload("res://sprites/interface/fases/world_backgroung_01.png"),
-	preload("res://sprites/interface/fases/world_backgroung_02.png"),
-	preload("res://sprites/interface/fases/world_backgroung_03.png"),
-	preload("res://sprites/interface/fases/world_backgroung_04.png")
+	preload("res://sprites/interface/fases/bg01.jpg"),
+	preload("res://sprites/interface/fases/bg02.jpg"),
+	preload("res://sprites/interface/fases/bg03.jpg"),
+	preload("res://sprites/interface/fases/bg04.jpg")
 ]
 var amount_of_levels = 10
 func _ready():
