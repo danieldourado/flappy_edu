@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=1]
+[gd_scene load_steps=42 format=1]
 
 [ext_resource path="res://scenes/spawner_parallax.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/bird.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://scripts/btn_go_back_to_select_level.tres.gd" type="Script" id=21]
 [ext_resource path="res://sprites/interface/button_resume.png" type="Texture" id=22]
 [ext_resource path="res://scenes/spawner_level.tscn" type="PackedScene" id=23]
+[ext_resource path="res://sounds/ambiencia.ogg" type="AudioStream" id=24]
 
 [sub_resource type="GDScript" id=1]
 
@@ -701,7 +702,6 @@ script/script = SubResource( 4 )
 
 [node name="cntr_gameover" type="Container" parent="hud"]
 
-editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -870,7 +870,6 @@ autoplay = ""
 
 [node name="hbox_buttons" type="HBoxContainer" parent="hud/cntr_gameover"]
 
-editor/display_folded = true
 rect/scale = Vector2( 0.6, 0.6 )
 focus/ignore_mouse = false
 focus/stop_mouse = false
@@ -934,7 +933,6 @@ autoplay = ""
 [node name="cntr_pause" type="Container" parent="hud"]
 
 process/pause_mode = 2
-editor/display_folded = true
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -1011,5 +1009,16 @@ params/stretch_mode = 0
 script/script = ExtResource( 21 )
 
 [node name="spawner_level" parent="." instance=ExtResource( 23 )]
+
+[node name="StreamPlayer" type="StreamPlayer" parent="."]
+
+stream/stream = ExtResource( 24 )
+stream/play = false
+stream/loop = true
+stream/volume_db = 6.11
+stream/autoplay = true
+stream/paused = false
+stream/loop_restart_time = 0.0
+stream/buffering_ms = 500
 
 
