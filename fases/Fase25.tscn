@@ -63,7 +63,7 @@ transform/pos = Vector2( 1381.83, 868.846 )
 
 [node name="coin2" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 1575.58, 75.7198 )
+transform/pos = Vector2( 1553.26, 173.353 )
 
 [node name="obstaculo_raio" parent="." instance=ExtResource( 5 )]
 

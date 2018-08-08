@@ -155,7 +155,8 @@ class FlappingState:
 		bird.set_angular_velocity(-3)
 		bird.get_node("anim").play("flap")
 		
-		audio_player.play("sfx_wing")
+		var wing = audio_player.play("sfx_wing")
+		audio_player.set_volume(wing, 0.18)
 		pass
 	
 	func exit():
@@ -237,10 +238,20 @@ class EndOfLevelState:
 		stage_manager.decide_if_show_pop_up(stage_manager.STAGE_GAME, stage_manager.current_level, stage_manager.END)
 		if game.level_current <=stage_manager.current_level:
 			game.level_current = stage_manager.current_level+1
+			save_game()
+
 		pass
-	
 	func update(delta):
 		pass
 	
 	func input(event):
 		pass
+
+		
+	func save_game():
+		var save_game = File.new()
+		save_game.open("user://savegame.save", File.WRITE)
+		save_game.store_line(str(game.level_current))
+		save_game.close()
+		
+
