@@ -172,7 +172,7 @@ x_offset = 100
 
 frames = SubResource( 2 )
 animation = "flap"
-frame = 21
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true
