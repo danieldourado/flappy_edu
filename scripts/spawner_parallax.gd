@@ -4,7 +4,7 @@ extends Node2D
 
 export var scene_name = "background_nuvens"
 export var horizontal_space = 980
-const AMOUNT_TO_FILL_VIEW = 30
+const AMOUNT_TO_FILL_VIEW = 300
 var scn_ground = null
 export var speed = 1.0
 export var y_variation = 50.0

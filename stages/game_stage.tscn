@@ -550,7 +550,7 @@ y_variation = 0.0
 
 [node name="spawner_parallax_mato" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 0, 819.44 )
+transform/pos = Vector2( -100, 819.44 )
 z/z = -1
 z/relative = false
 scene_name = "mato_parallax"
@@ -596,6 +596,7 @@ script/script = SubResource( 1 )
 
 [node name="spawner_ground" parent="." instance=ExtResource( 5 )]
 
+transform/pos = Vector2( -50, 256 )
 z/z = 2
 
 [node name="background" parent="." instance=ExtResource( 6 )]
@@ -1015,11 +1016,7 @@ script/script = ExtResource( 21 )
 stream/stream = ExtResource( 24 )
 stream/play = false
 stream/loop = true
-<<<<<<< HEAD
-stream/volume_db = 0.0
-=======
 stream/volume_db = 6.11
->>>>>>> 3588de1c3efdc90c7bbdef92d8aaed6c78d40db9
 stream/autoplay = true
 stream/paused = false
 stream/loop_restart_time = 0.0

@@ -19,7 +19,7 @@ func load_current_level_number():
 	var load_current_level_number = 1
 	var save_game = File.new()
 	if not save_game.file_exists("user://savegame.save"):
-		return # Error! We don't have a save to load.
+		return 1
 
 	save_game.open("user://savegame.save", File.READ)
 	while not save_game.eof_reached():

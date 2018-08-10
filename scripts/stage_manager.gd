@@ -22,8 +22,8 @@ func change_stage(stage_path, level = 1, is_splash_screen=false):
 	is_changing = true
 	get_tree().get_root().set_disable_input(true)
 	
-	if stage_path != STAGE_GAME:
-		audio_player.play("sfx_menu_music.ogg")
+	#if stage_path != STAGE_GAME:
+	#	audio_player.play("sfx_menu_music.ogg")
 	
 	if not is_splash_screen:
 		get_node("anim").play("fade_in")
