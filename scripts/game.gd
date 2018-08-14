@@ -7,10 +7,10 @@ const GROUP_GROUNDS = "grounds"
 const GROUP_BIRDS   = "birds"
 const GROUP_END_OF_LEVEL  = "end_of_level"
 
-const MEDAL_BRONZE   = 1
-const MEDAL_SILVER   = 2
-const MEDAL_GOLD     = 3
-const MEDAL_PLATINUM = 4
+const MEDAL_BRONZE   = 2
+const MEDAL_SILVER   = 3
+const MEDAL_GOLD     = 4
+const MEDAL_PLATINUM = 5
 
 var score_best    = 0 setget _set_score_best
 var score_current = 0 setget _set_score_current
