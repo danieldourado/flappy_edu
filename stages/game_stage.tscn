@@ -538,24 +538,43 @@ z/relative = false
 speed = 1.2
 y_variation = 200.0
 
+[node name="spawner_parallax_montanhas" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( -90, 716 )
+z/z = -1
+z/relative = false
+scene_name = "background_montanhas"
+horizontal_space = 806
+y_variation = 0.0
+
 [node name="spawner_parallax_predios" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( 0, 535.44 )
+transform/pos = Vector2( -110, 715.44 )
 z/z = -1
 z/relative = false
 scene_name = "predios2_parallax"
-horizontal_space = 2000
-speed = 0.25
+horizontal_space = 1538
+speed = 0.9
+y_variation = 0.0
+
+[node name="spawner_parallax_predios_coloridos" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( -90, 476 )
+z/z = -1
+z/relative = false
+scene_name = "background_predios_coloridos"
+horizontal_space = 2600
+speed = 0.8
 y_variation = 0.0
 
 [node name="spawner_parallax_mato" parent="." instance=ExtResource( 1 )]
 
-transform/pos = Vector2( -100, 819.44 )
+transform/pos = Vector2( -100, 879.44 )
 z/z = -1
 z/relative = false
 scene_name = "mato_parallax"
-horizontal_space = 1300
-speed = 0.15
+horizontal_space = 594
+speed = 0.6
 y_variation = 0.0
 
 [node name="bird" parent="." instance=ExtResource( 2 )]

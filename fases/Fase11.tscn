@@ -35,14 +35,22 @@ editor/display_folded = true
 transform/pos = Vector2( 1648.1, 585.093 )
 transform/scale = Vector2( 0.5, 0.5 )
 
+[node name="AnimatedSprite" parent="obstaculo_raio1"]
+
+frame = 0
+
+[node name="AnimatedSprite2" parent="obstaculo_raio1"]
+
+frame = 0
+
 [node name="AnimatedSprite1" parent="obstaculo_raio1"]
 
-frame = 3
+frame = 2
 
 [node name="AnimatedSprite3" parent="obstaculo_raio1"]
 
 z/z = -1
-frame = 3
+frame = 2
 
 [node name="obstaculo_raio2" parent="." instance=ExtResource( 2 )]
 
@@ -50,28 +58,39 @@ editor/display_folded = true
 transform/pos = Vector2( 1963.92, 750.954 )
 transform/scale = Vector2( 0.5, 0.5 )
 
-[node name="AnimatedSprite1" parent="obstaculo_raio2"]
+[node name="AnimatedSprite" parent="obstaculo_raio2"]
 
-frame = 2
+frame = 0
+
+[node name="AnimatedSprite2" parent="obstaculo_raio2"]
+
+frame = 0
 
 [node name="AnimatedSprite3" parent="obstaculo_raio2"]
 
 z/z = -1
-frame = 2
 
 [node name="obstaculo_raio3" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 2286.55, 587.365 )
 transform/scale = Vector2( 0.5, 0.5 )
 
+[node name="AnimatedSprite" parent="obstaculo_raio3"]
+
+frame = 0
+
+[node name="AnimatedSprite2" parent="obstaculo_raio3"]
+
+frame = 0
+
 [node name="AnimatedSprite1" parent="obstaculo_raio3"]
 
-frame = 3
+frame = 2
 
 [node name="AnimatedSprite3" parent="obstaculo_raio3"]
 
 z/z = -1
-frame = 3
+frame = 2
 
 [node name="obstaculo_raio4" parent="." instance=ExtResource( 2 )]
 
